@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plataforma geográfica de cámaras y pórticos de la Región Metropolitana.">
+  <title>Red Geográfica RM</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-icon">◉</div>
+      <div>
+        <h1 id="appTitle">RED GEOGRÁFICA RM</h1>
+        <p>Cámaras y pórticos para apoyo al análisis territorial</p>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <button class="nav-item active" data-view="mapa">▱ <span>MAPA</span></button>
+      <button class="nav-item" data-view="listado">☷ <span>LISTADO</span></button>
+      <button class="nav-item" data-view="analisis">▥ <span>ANÁLISIS</span></button>
+      <button class="nav-item" data-view="reportes">▤ <span>REPORTES</span></button>
+    </nav>
+
+    <div class="session-box">
+      <div><strong id="fechaActual"></strong><span id="horaActual"></span></div>
+      <small>Analista · OS-9</small>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <aside class="sidebar">
+      <div class="sidebar-title">
+        <span>REDES DISPONIBLES</span>
+        <button id="btnRestablecer" class="icon-button" title="Restablecer filtros">↻</button>
+      </div>
+
+      <div id="networkTree" class="network-tree"></div>
+
+      <button id="btnAgregar" class="add-button" title="Disponible cuando incorporemos administración de datos">＋ AGREGAR PUNTO</button>
+
+      <div class="sidebar-footer">
+        <span>◉ Total cargado: <strong id="totalGeneral">0</strong></span>
+        <span id="estadoCarga">Cargando…</span>
+      </div>
+    </aside>
+
+    <section class="content-area">
+      <div class="map-toolbar">
+        <div class="search-wrap">
+          <input id="searchInput" type="search" placeholder="Buscar dirección, pórtico, comuna o referencia…" autocomplete="off">
+          <button id="searchButton" title="Buscar">⌕</button>
+        </div>
+        <button id="btnCercanos" class="action-button">◎ BÚSQUEDA CERCANA</button>
+      </div>
+
+      <div id="map"></div>
+
+      <div class="selection-tools" aria-label="Herramientas de selección">
+        <div class="tool-caption">Herramientas de selección</div>
+        <button id="toolPoint" class="tool-button active" title="Seleccionar por punto">⌖<span>Punto</span></button>
+        <button id="toolCircle" class="tool-button" title="Dibujar círculo">◯<span>Círculo</span></button>
+        <button id="toolRectangle" class="tool-button" title="Dibujar rectángulo">□<span>Rectángulo</span></button>
+        <button id="toolPolygon" class="tool-button" title="Dibujar polígono">⬠<span>Polígono</span></button>
+        <button id="toolClear" class="tool-button danger" title="Limpiar selección">⌫<span>Limpiar</span></button>
+      </div>
+
+      <div class="map-controls">
+        <button id="btnZoomIn">＋</button>
+        <button id="btnZoomOut">−</button>
+        <button id="btnLayers" title="Cambiar mapa base">▱</button>
+        <button id="btnCenter" title="Centrar Región Metropolitana">◎</button>
+      </div>
+
+      <section class="legend-panel">
+        <h3>LEYENDA</h3>
+        <div><i style="--c:#4CAF50"></i>Pórticos de autopistas</div>
+        <div><i style="--c:#8E44AD"></i>Cámaras municipales</div>
+        <div><i style="--c:#178BC1"></i>Ministerio de Transportes</div>
+        <div><i style="--c:#E74C3C"></i>Red S.P.D.</div>
+        <div><i class="selection-symbol"></i>Área de selección</div>
+      </section>
+
+      <section class="results-dock">
+        <div class="result-total">
+          <h3>RESULTADOS EN EL ÁREA SELECCIONADA</h3>
+          <strong id="selectedTotal">0</strong>
+          <span>CÁMARAS / PÓRTICOS<br>encontrados</span>
+        </div>
+
+        <div class="result-breakdown">
+          <h3>DISTRIBUCIÓN POR ORGANISMO</h3>
+          <div id="breakdownList"></div>
+        </div>
+
+        <div class="result-chart">
+          <div id="donutChart" class="donut"><div><strong id="donutValue">0</strong><span>total</span></div></div>
+        </div>
+
+        <div class="result-table-wrap">
+          <div class="table-head">
+            <h3>LISTADO RESUMIDO</h3>
+            <button id="btnListadoCompleto">VER LISTADO COMPLETO ›</button>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>ID</th><th>NOMBRE</th><th>ORGANISMO</th><th>COMUNA</th><th>DISTANCIA</th></tr></thead>
+              <tbody id="resultsTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="statusbar">
+    <span>Fuente de datos: <strong>GORE RM / organismos institucionales</strong></span>
+    <span>Última actualización: <strong id="ultimaActualizacion">30-07-2026</strong></span>
+    <span>Versión prototipo 2.0 · Desarrollado para apoyo al análisis</span>
+  </footer>
+</div>
+
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modal-card">
+    <button id="modalClose" class="modal-close">×</button>
+    <h2 id="modalTitle">Listado completo</h2>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
