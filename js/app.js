@@ -1,0 +1,428 @@
+'use strict';
+
+const CONFIG = {
+  center: [-33.52, -70.67],
+  zoom: 10,
+  nearbyKm: 3,
+  networks: [
+    { id: 'autopistas', label: 'AUTOPISTAS', color: '#4CAF50', file: 'data/autopistas.geojson', icon: 'A' },
+    { id: 'municipalidades', label: 'MUNICIPALIDADES', color: '#8E44AD', file: 'data/municipalidades.geojson', icon: 'M' },
+    { id: 'transportes', label: 'MINISTERIO DE TRANSPORTES', color: '#178BC1', file: 'data/transportes.geojson', icon: 'T' },
+    { id: 'spd', label: 'S.P.D.', color: '#E74C3C', file: 'data/spd.geojson', icon: 'S' },
+    { id: 'cuarteles', label: 'CUARTELES CARABINEROS', color: '#D4A017', file: 'data/cuarteles_rm.geojson', icon: 'C' }
+  ]
+};
+
+const state = {
+  features: [],
+  visible: [],
+  selected: [],
+  markers: new Map(),
+  activeGroups: new Map(),
+  baseMode: 'light',
+  pointMode: true,
+  referencePoint: null,
+  queryMarker: null,
+  selectedShape: null,
+  drawHandler: null,
+  ignoreMapClickUntil: 0
+};
+
+const map = L.map('map', { zoomControl: false, preferCanvas: true }).setView(CONFIG.center, CONFIG.zoom);
+const tiles = {
+  light: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 20, attribution: '&copy; OpenStreetMap &copy; CARTO' }),
+  osm: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; OpenStreetMap' }),
+  satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 19, attribution: 'Esri' })
+};
+tiles.light.addTo(map);
+
+const markerLayer = L.layerGroup().addTo(map);
+const selectionLayer = L.featureGroup().addTo(map);
+
+const $ = id => document.getElementById(id);
+
+function normalizeText(value = '') {
+  return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+}
+
+function escapeHtml(value = '') {
+  return String(value).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+}
+
+function distanceKm(a, b) {
+  const R = 6371;
+  const dLat = (b.lat - a.lat) * Math.PI / 180;
+  const dLng = (b.lng - a.lng) * Math.PI / 180;
+  const q = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * Math.PI / 180) * Math.cos(b.lat * Math.PI / 180) * Math.sin(dLng / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(q), Math.sqrt(1 - q));
+}
+
+function coords(feature) {
+  const [lng, lat] = feature.geometry.coordinates;
+  return L.latLng(lat, lng);
+}
+
+function networkOf(feature) { return CONFIG.networks.find(n => n.id === feature.__network); }
+
+function longAutopista(contract = '') {
+  const value = String(contract).trim();
+  const normalized = normalizeText(value);
+  if (normalized.includes('santiago - los vilos')) return 'Ruta 5 Santiago–Los Vilos';
+  if (normalized.includes('norte-sur') || normalized.includes('norte sur')) return 'Sistema Norte–Sur';
+  if (normalized.includes('vespucio norte')) return 'Vespucio Norte';
+  if (normalized.includes('vespucio sur')) return 'Vespucio Sur';
+  if (normalized.includes('costanera norte')) return 'Costanera Norte';
+  if (normalized.includes('americo vespucio oriente') || normalized.includes('av. americo vespucio oriente')) return 'Américo Vespucio Oriente';
+  if (normalized.includes('acceso vial aeropuerto') || normalized.includes('aeropuerto')) return 'Acceso Vial Aeropuerto';
+  return value || 'Otras autopistas';
+}
+
+function subgroupOf(feature) {
+  const p = feature.properties || {};
+  if (feature.__network === 'autopistas') return longAutopista(p.contrato);
+  if (feature.__network === 'municipalidades') return p.municipalidad || p.nom_comuna || p.comuna || 'Municipalidad sin especificar';
+  if (feature.__network === 'transportes') return p.red || p.subgrupo || p.tipo || 'Red MTT';
+  if (feature.__network === 'spd') return p.red || p.subgrupo || 'Red de pórticos SPD';
+  if (feature.__network === 'cuarteles') return p.prefectura || p.tipo || 'Cuarteles RM';
+  return 'Sin grupo';
+}
+
+function featureName(feature) {
+  const p = feature.properties || {};
+  return p.descripcio || p.nombre || p.name || `Punto ${p.objectid || ''}`.trim();
+}
+
+function featureId(feature) {
+  const p = feature.properties || {};
+  return p.id || p.codigo || p.objectid || 'S/I';
+}
+
+function featureCommune(feature) {
+  const p = feature.properties || {};
+  return p.nom_comuna || p.comuna || 'S/I';
+}
+
+function popupHtml(feature, distance = null) {
+  const p = feature.properties || {};
+  const n = networkOf(feature);
+  return `<div class="popup-card">
+    <h3>${escapeHtml(featureName(feature))}</h3>
+    <p><b>Red:</b> ${escapeHtml(n.label)}</p>
+    <p><b>Grupo:</b> ${escapeHtml(subgroupOf(feature))}</p>
+    <p><b>Comuna:</b> ${escapeHtml(featureCommune(feature))}</p>
+    <p><b>Tramo / referencia:</b> ${escapeHtml(p.tramo || p.direccion || 'S/I')}</p>
+    <p><b>Tipo:</b> ${escapeHtml(p.tipo_peaje || p.tipo || 'S/I')}</p>
+    ${distance != null ? `<p><b>Distancia:</b> ${distance.toFixed(2)} km</p>` : ''}
+  </div>`;
+}
+
+async function loadNetwork(network) {
+  const response = await fetch(network.file, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`${network.file}: HTTP ${response.status}`);
+  const data = await response.json();
+
+  // Acepta tanto GeoJSON FeatureCollection como arreglos simples
+  // con propiedades lat/lng, como cuarteles_rm.geojson.
+  const rawFeatures = Array.isArray(data)
+    ? data.map((item, index) => ({
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [Number(item.lng ?? item.lon), Number(item.lat)]
+        },
+        properties: { ...item, objectid: item.objectid ?? index + 1 }
+      }))
+    : (data.features || []);
+
+  return rawFeatures
+    .filter(f => {
+      const coordinates = f.geometry?.coordinates;
+      return f.geometry?.type === 'Point' &&
+        Array.isArray(coordinates) &&
+        coordinates.length >= 2 &&
+        Number.isFinite(Number(coordinates[0])) &&
+        Number.isFinite(Number(coordinates[1]));
+    })
+    .map(f => ({
+      ...f,
+      geometry: {
+        ...f.geometry,
+        coordinates: [Number(f.geometry.coordinates[0]), Number(f.geometry.coordinates[1])]
+      },
+      __network: network.id,
+      __subgroup: null
+    }));
+}
+
+async function initialize() {
+  bindUI();
+  updateClock();
+  setInterval(updateClock, 1000);
+
+  try {
+    const loaded = await Promise.all(CONFIG.networks.map(async network => {
+      try { return await loadNetwork(network); }
+      catch (error) { console.error(error); showToast(`No se pudo cargar ${network.label}.`); return []; }
+    }));
+    state.features = loaded.flat();
+    state.features.forEach(f => { f.__subgroup = subgroupOf(f); });
+    buildGroupState();
+    renderNetworkTree();
+    applyFilters();
+    $('estadoCarga').textContent = 'Datos cargados';
+    $('totalGeneral').textContent = state.features.length;
+  } catch (error) {
+    console.error(error);
+    $('estadoCarga').textContent = 'Error de carga';
+    showToast('No fue posible iniciar la plataforma. Revisa la consola.');
+  }
+}
+
+function buildGroupState() {
+  CONFIG.networks.forEach(network => {
+    const groups = [...new Set(state.features.filter(f => f.__network === network.id).map(f => f.__subgroup))].sort((a,b) => a.localeCompare(b,'es'));
+    state.activeGroups.set(network.id, new Set(groups));
+  });
+}
+
+function renderNetworkTree() {
+  const root = $('networkTree');
+  root.innerHTML = '';
+  CONFIG.networks.forEach((network, index) => {
+    const features = state.features.filter(f => f.__network === network.id);
+    const groups = [...new Set(features.map(f => f.__subgroup))].sort((a,b) => a.localeCompare(b,'es'));
+    const section = document.createElement('section');
+    section.className = `network-group ${index === 0 ? 'open' : ''}`;
+    section.style.setProperty('--group-color', network.color);
+    section.innerHTML = `<button class="group-header">
+      <span class="group-icon" style="background:${network.color}">${network.icon}</span>
+      <span class="group-name">${network.label}</span>
+      <span class="group-count">${features.length}</span>
+    </button><div class="group-body"></div>`;
+    section.querySelector('.group-header').addEventListener('click', () => section.classList.toggle('open'));
+    const body = section.querySelector('.group-body');
+    if (!groups.length) {
+      body.innerHTML = '<div class="group-empty">Sin datos cargados por el momento.</div>';
+    } else {
+      const allRow = createLayerRow(network, '__all__', `Todas (${features.length})`, features.length, true);
+      body.appendChild(allRow);
+      groups.forEach(group => {
+        const count = features.filter(f => f.__subgroup === group).length;
+        body.appendChild(createLayerRow(network, group, group, count, true));
+      });
+    }
+    root.appendChild(section);
+  });
+}
+
+function createLayerRow(network, group, label, count, checked) {
+  const row = document.createElement('label');
+  row.className = 'layer-row';
+  const input = document.createElement('input');
+  input.type = 'checkbox'; input.checked = checked;
+  input.dataset.network = network.id; input.dataset.group = group;
+  const text = document.createElement('span'); text.textContent = label;
+  const number = document.createElement('small'); number.textContent = count;
+  row.append(input, text, number);
+  input.addEventListener('change', () => {
+    const set = state.activeGroups.get(network.id);
+    const allInputs = [...document.querySelectorAll(`input[data-network="${network.id}"]`)];
+    if (group === '__all__') {
+      allInputs.filter(i => i.dataset.group !== '__all__').forEach(i => i.checked = input.checked);
+      set.clear();
+      if (input.checked) allInputs.filter(i => i.dataset.group !== '__all__').forEach(i => set.add(i.dataset.group));
+    } else {
+      input.checked ? set.add(group) : set.delete(group);
+      const all = allInputs.find(i => i.dataset.group === '__all__');
+      if (all) all.checked = allInputs.filter(i => i.dataset.group !== '__all__').every(i => i.checked);
+    }
+    applyFilters();
+  });
+  return row;
+}
+
+function applyFilters() {
+  const term = normalizeText($('searchInput').value);
+  state.visible = state.features.filter(feature => {
+    if (!state.activeGroups.get(feature.__network)?.has(feature.__subgroup)) return false;
+    if (!term) return true;
+    const p = feature.properties || {};
+    const haystack = normalizeText([featureName(feature), feature.__subgroup, featureCommune(feature), p.tramo, p.direccion, p.tipo_peaje, p.tipo, p.prefectura, p.provincia, p.codigo].join(' '));
+    return haystack.includes(term);
+  });
+  renderMarkers();
+  if (state.selected.length) {
+    state.selected = state.selected.filter(f => state.visible.includes(f));
+    renderResults();
+  }
+}
+
+function renderMarkers() {
+  markerLayer.clearLayers();
+  state.markers.clear();
+  state.visible.forEach(feature => {
+    const network = networkOf(feature);
+    const point = coords(feature);
+    const marker = L.circleMarker(point, { radius: 6, color: '#fff', weight: 2, fillColor: network.color, fillOpacity: .95 });
+    marker.bindPopup(() => popupHtml(feature, state.referencePoint ? distanceKm(state.referencePoint, point) : null));
+    marker.on('click', ev => { L.DomEvent.stopPropagation(ev); focusFeature(feature); });
+    marker.addTo(markerLayer);
+    state.markers.set(feature, marker);
+  });
+}
+
+function selectNearby(latlng) {
+  clearSelection(false);
+  state.referencePoint = latlng;
+  state.queryMarker = L.circleMarker(latlng, { radius: 8, color: '#fff', weight: 3, fillColor: '#ff7b19', fillOpacity: 1 }).addTo(selectionLayer);
+  const radius = L.circle(latlng, { radius: CONFIG.nearbyKm * 1000, color: '#2c8fee', weight: 2, dashArray: '7 6', fillColor: '#2c8fee', fillOpacity: .07 }).addTo(selectionLayer);
+  state.selectedShape = radius;
+  state.selected = state.visible.filter(f => distanceKm(latlng, coords(f)) <= CONFIG.nearbyKm).sort((a,b) => distanceKm(latlng,coords(a)) - distanceKm(latlng,coords(b)));
+  renderResults();
+}
+
+function selectByLayer(layer) {
+  state.referencePoint = layer.getBounds ? layer.getBounds().getCenter() : layer.getLatLng();
+  state.selected = state.visible.filter(feature => {
+    const point = coords(feature);
+    if (layer instanceof L.Circle) return layer.getLatLng().distanceTo(point) <= layer.getRadius();
+    if (layer instanceof L.Rectangle) return layer.getBounds().contains(point);
+    if (layer instanceof L.Polygon) return pointInPolygon(point, layer.getLatLngs()[0]);
+    return false;
+  });
+  state.selected.sort((a,b) => distanceKm(state.referencePoint,coords(a)) - distanceKm(state.referencePoint,coords(b)));
+  renderResults();
+}
+
+function pointInPolygon(point, vertices) {
+  let inside = false;
+  const x = point.lng, y = point.lat;
+  for (let i=0,j=vertices.length-1;i<vertices.length;j=i++) {
+    const xi=vertices[i].lng, yi=vertices[i].lat, xj=vertices[j].lng, yj=vertices[j].lat;
+    const intersect = ((yi>y)!==(yj>y)) && (x < (xj-xi)*(y-yi)/(yj-yi || Number.EPSILON)+xi);
+    if (intersect) inside = !inside;
+  }
+  return inside;
+}
+
+function renderResults() {
+  $('selectedTotal').textContent = state.selected.length;
+  $('donutValue').textContent = state.selected.length;
+  renderBreakdown();
+  renderTable();
+  updateSelectedMarkers();
+}
+
+function renderBreakdown() {
+  const counts = new Map(CONFIG.networks.map(n => [n.id,0]));
+  state.selected.forEach(f => counts.set(f.__network, (counts.get(f.__network)||0)+1));
+  const root = $('breakdownList'); root.innerHTML = '';
+  CONFIG.networks.forEach(n => {
+    const row = document.createElement('div'); row.className='breakdown-row';
+    row.innerHTML = `<i style="background:${n.color}"></i><span>${n.label}</span><strong>${counts.get(n.id)||0}</strong>`;
+    root.appendChild(row);
+  });
+  const total = Math.max(state.selected.length,1);
+  let start=0; const segments=[];
+  CONFIG.networks.forEach(n => {
+    const value=counts.get(n.id)||0; if(!value) return;
+    const end=start+(value/total)*100; segments.push(`${n.color} ${start}% ${end}%`); start=end;
+  });
+  $('donutChart').style.setProperty('--segments', segments.length ? `conic-gradient(${segments.join(',')})` : 'conic-gradient(#303733 0 100%)');
+}
+
+function renderTable() {
+  const body = $('resultsTable'); body.innerHTML='';
+  state.selected.slice(0,8).forEach(feature => {
+    const n=networkOf(feature); const point=coords(feature);
+    const distance=state.referencePoint ? distanceKm(state.referencePoint,point) : null;
+    const row=document.createElement('tr');
+    row.innerHTML=`<td style="color:${n.color}">${escapeHtml(featureId(feature))}</td><td>${escapeHtml(featureName(feature))}</td><td>${escapeHtml(n.label)}</td><td>${escapeHtml(featureCommune(feature))}</td><td>${distance==null?'—':distance.toFixed(2)+' km'}</td>`;
+    row.addEventListener('click',()=>focusFeature(feature)); body.appendChild(row);
+  });
+  if(!state.selected.length){ const row=document.createElement('tr'); row.innerHTML='<td colspan="5" style="text-align:center;color:#8d9891;padding:24px">Selecciona un punto o dibuja un área en el mapa.</td>'; body.appendChild(row); }
+}
+
+function updateSelectedMarkers() {
+  state.markers.forEach((marker,feature)=>{
+    const selected=state.selected.includes(feature); const n=networkOf(feature);
+    marker.setStyle({ radius:selected?9:6, fillColor:selected?'#ff7016':n.color, weight:selected?3:2, fillOpacity:1 });
+  });
+}
+
+function focusFeature(feature) {
+  const marker=state.markers.get(feature); if(!marker) return;
+  map.flyTo(coords(feature), Math.max(map.getZoom(),15), {duration:.7});
+  setTimeout(()=>marker.openPopup(),600);
+}
+
+function clearSelection(resetResults=true) {
+  selectionLayer.clearLayers();
+  state.selectedShape=null; state.queryMarker=null; state.referencePoint=null;
+  if(resetResults){ state.selected=[]; renderResults(); }
+}
+
+function startDraw(type) {
+  clearSelection();
+  if(state.drawHandler) state.drawHandler.disable();
+  const options={ shapeOptions:{color:'#2c8fee',weight:3,dashArray:'8 6',fillColor:'#2c8fee',fillOpacity:.12} };
+  if(type==='circle') state.drawHandler=new L.Draw.Circle(map,options);
+  if(type==='rectangle') state.drawHandler=new L.Draw.Rectangle(map,options);
+  if(type==='polygon') state.drawHandler=new L.Draw.Polygon(map,{...options,allowIntersection:false,showArea:true});
+  state.pointMode=false; setActiveTool(`tool${type[0].toUpperCase()+type.slice(1)}`); state.drawHandler.enable();
+}
+
+function setActiveTool(id) { document.querySelectorAll('.tool-button').forEach(b=>b.classList.toggle('active',b.id===id)); }
+
+function bindUI() {
+  $('searchInput').addEventListener('input', applyFilters);
+  $('searchButton').addEventListener('click', applyFilters);
+  $('btnCercanos').addEventListener('click',()=>{ state.pointMode=true; setActiveTool('toolPoint'); showToast(`Haz clic en el mapa. Se buscarán puntos a ${CONFIG.nearbyKm} km.`); });
+  $('toolPoint').addEventListener('click',()=>{ state.pointMode=true; if(state.drawHandler)state.drawHandler.disable(); setActiveTool('toolPoint'); });
+  $('toolCircle').addEventListener('click',()=>startDraw('circle'));
+  $('toolRectangle').addEventListener('click',()=>startDraw('rectangle'));
+  $('toolPolygon').addEventListener('click',()=>startDraw('polygon'));
+  $('toolClear').addEventListener('click',()=>{ clearSelection(); state.pointMode=true; setActiveTool('toolPoint'); });
+  $('btnZoomIn').addEventListener('click',()=>map.zoomIn());
+  $('btnZoomOut').addEventListener('click',()=>map.zoomOut());
+  $('btnCenter').addEventListener('click',()=>map.setView(CONFIG.center,CONFIG.zoom));
+  $('btnLayers').addEventListener('click',cycleBaseMap);
+  $('btnRestablecer').addEventListener('click',resetFilters);
+  $('btnAgregar').addEventListener('click',()=>showToast('El ingreso de puntos quedará habilitado cuando definamos el sistema de administración y permisos.'));
+  $('btnListadoCompleto').addEventListener('click',openFullList);
+  $('modalClose').addEventListener('click',closeModal);
+  $('modal').addEventListener('click',e=>{if(e.target===$('modal'))closeModal();});
+  document.querySelectorAll('.nav-item').forEach(btn=>btn.addEventListener('click',()=>{
+    document.querySelectorAll('.nav-item').forEach(b=>b.classList.remove('active')); btn.classList.add('active');
+    if(btn.dataset.view!=='mapa') showToast(`${btn.textContent.trim()}: módulo preparado para una etapa posterior.`);
+  }));
+  map.on('click',e=>{ if(Date.now()<state.ignoreMapClickUntil) return; if(state.pointMode) selectNearby(e.latlng); });
+  map.on(L.Draw.Event.CREATED,e=>{
+    state.ignoreMapClickUntil=Date.now()+500; selectionLayer.clearLayers(); selectionLayer.addLayer(e.layer); state.selectedShape=e.layer; selectByLayer(e.layer); state.pointMode=false;
+  });
+}
+
+function resetFilters(){
+  $('searchInput').value='';
+  document.querySelectorAll('.layer-row input').forEach(i=>i.checked=true);
+  buildGroupState(); applyFilters(); clearSelection(); showToast('Filtros restablecidos.');
+}
+
+function cycleBaseMap(){
+  const modes=['light','osm','satellite']; const idx=modes.indexOf(state.baseMode); const next=modes[(idx+1)%modes.length];
+  map.removeLayer(tiles[state.baseMode]); tiles[next].addTo(map); tiles[next].bringToBack(); state.baseMode=next;
+  showToast(`Mapa base: ${next==='light'?'claro':next==='osm'?'OpenStreetMap':'satelital'}.`);
+}
+
+function openFullList(){
+  $('modalTitle').textContent=`Listado completo (${state.selected.length})`;
+  const rows=state.selected.map(feature=>{ const n=networkOf(feature); const d=state.referencePoint?distanceKm(state.referencePoint,coords(feature)):null; return `<tr><td>${escapeHtml(featureId(feature))}</td><td>${escapeHtml(featureName(feature))}</td><td>${escapeHtml(n.label)}</td><td>${escapeHtml(feature.__subgroup)}</td><td>${escapeHtml(featureCommune(feature))}</td><td>${d==null?'—':d.toFixed(2)+' km'}</td></tr>`; }).join('');
+  $('modalContent').innerHTML=`<table><thead><tr><th>ID</th><th>Nombre</th><th>Organismo</th><th>Grupo</th><th>Comuna</th><th>Distancia</th></tr></thead><tbody>${rows||'<tr><td colspan="6">No hay resultados seleccionados.</td></tr>'}</tbody></table>`;
+  $('modal').classList.add('open'); $('modal').setAttribute('aria-hidden','false');
+}
+function closeModal(){ $('modal').classList.remove('open'); $('modal').setAttribute('aria-hidden','true'); }
+
+function updateClock(){ const now=new Date(); $('fechaActual').textContent=now.toLocaleDateString('es-CL'); $('horaActual').textContent=now.toLocaleTimeString('es-CL'); }
+function showToast(message){ const old=document.querySelector('.toast'); if(old)old.remove(); const el=document.createElement('div'); el.className='toast'; el.textContent=message; document.body.appendChild(el); setTimeout(()=>el.remove(),3200); }
+
+document.addEventListener('DOMContentLoaded', initialize);
