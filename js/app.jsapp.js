@@ -8,7 +8,8 @@ const CONFIG = {
     { id: 'autopistas', label: 'AUTOPISTAS', color: '#4CAF50', file: 'data/autopistas.geojson', icon: 'A' },
     { id: 'municipalidades', label: 'MUNICIPALIDADES', color: '#8E44AD', file: 'data/municipalidades.geojson', icon: 'M' },
     { id: 'transportes', label: 'MINISTERIO DE TRANSPORTES', color: '#178BC1', file: 'data/transportes.geojson', icon: 'T' },
-    { id: 'spd', label: 'S.P.D.', color: '#E74C3C', file: 'data/spd.geojson', icon: 'S' }
+    { id: 'spd', label: 'S.P.D.', color: '#E74C3C', file: 'data/spd.geojson', icon: 'S' },
+    { id: 'cuarteles', label: 'CUARTELES CARABINEROS', color: '#D4A017', file: 'data/cuarteles_rm.geojson', icon: 'C' }
   ]
 };
 
@@ -82,6 +83,7 @@ function subgroupOf(feature) {
   if (feature.__network === 'municipalidades') return p.municipalidad || p.nom_comuna || p.comuna || 'Municipalidad sin especificar';
   if (feature.__network === 'transportes') return p.red || p.subgrupo || p.tipo || 'Red MTT';
   if (feature.__network === 'spd') return p.red || p.subgrupo || 'Red de pórticos SPD';
+  if (feature.__network === 'cuarteles') return p.prefectura || p.tipo || 'Cuarteles RM';
   return 'Sin grupo';
 }
 
@@ -118,9 +120,38 @@ async function loadNetwork(network) {
   const response = await fetch(network.file, { cache: 'no-store' });
   if (!response.ok) throw new Error(`${network.file}: HTTP ${response.status}`);
   const data = await response.json();
-  return (data.features || [])
-    .filter(f => f.geometry?.type === 'Point' && Array.isArray(f.geometry.coordinates))
-    .map(f => ({ ...f, __network: network.id, __subgroup: null }));
+
+  // Acepta tanto GeoJSON FeatureCollection como arreglos simples
+  // con propiedades lat/lng, como cuarteles_rm.geojson.
+  const rawFeatures = Array.isArray(data)
+    ? data.map((item, index) => ({
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [Number(item.lng ?? item.lon), Number(item.lat)]
+        },
+        properties: { ...item, objectid: item.objectid ?? index + 1 }
+      }))
+    : (data.features || []);
+
+  return rawFeatures
+    .filter(f => {
+      const coordinates = f.geometry?.coordinates;
+      return f.geometry?.type === 'Point' &&
+        Array.isArray(coordinates) &&
+        coordinates.length >= 2 &&
+        Number.isFinite(Number(coordinates[0])) &&
+        Number.isFinite(Number(coordinates[1]));
+    })
+    .map(f => ({
+      ...f,
+      geometry: {
+        ...f.geometry,
+        coordinates: [Number(f.geometry.coordinates[0]), Number(f.geometry.coordinates[1])]
+      },
+      __network: network.id,
+      __subgroup: null
+    }));
 }
 
 async function initialize() {
@@ -216,7 +247,7 @@ function applyFilters() {
     if (!state.activeGroups.get(feature.__network)?.has(feature.__subgroup)) return false;
     if (!term) return true;
     const p = feature.properties || {};
-    const haystack = normalizeText([featureName(feature), feature.__subgroup, featureCommune(feature), p.tramo, p.direccion, p.tipo_peaje, p.tipo].join(' '));
+    const haystack = normalizeText([featureName(feature), feature.__subgroup, featureCommune(feature), p.tramo, p.direccion, p.tipo_peaje, p.tipo, p.prefectura, p.provincia, p.codigo].join(' '));
     return haystack.includes(term);
   });
   renderMarkers();
