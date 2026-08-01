@@ -9,7 +9,9 @@ const CONFIG = {
     { id: 'municipalidades', label: 'MUNICIPALIDADES', color: '#8E44AD', file: 'data/municipalidades.geojson', icon: 'M' },
     { id: 'transportes', label: 'MINISTERIO DE TRANSPORTES', color: '#178BC1', file: 'data/transportes.geojson', icon: 'T' },
     { id: 'spd', label: 'S.P.D.', color: '#E74C3C', file: 'data/spd.geojson', icon: 'S' },
-    { id: 'cuarteles', label: 'CUARTELES CARABINEROS', color: '#D4A017', file: 'data/cuarteles_rm.geojson', icon: 'C' }
+    { id: 'cuarteles', label: 'CUARTELES CARABINEROS', color: '#D4A017', file: 'data/cuarteles_rm.geojson', icon: 'C' },
+    { id: 'aerodromos', label: 'AERÓDROMOS / AEROPUERTOS', color: '#F97316', file: 'data/aerodromos_RM.json', icon: 'A' },
+    { id: 'helipuertos', label: 'HELIPUERTOS', color: '#2563EB', file: 'data/helipuertos_RM.json', icon: 'H' }
   ]
 };
 
@@ -84,6 +86,8 @@ function subgroupOf(feature) {
   if (feature.__network === 'transportes') return p.red || p.subgrupo || p.tipo || 'Red MTT';
   if (feature.__network === 'spd') return p.red || p.subgrupo || 'Red de pórticos SPD';
   if (feature.__network === 'cuarteles') return p.prefectura || p.tipo || 'Cuarteles RM';
+  if (feature.__network === 'aerodromos') return p.tipo || p.red || 'Infraestructura aeronáutica';
+  if (feature.__network === 'helipuertos') return p.operador || p.red || 'Helipuertos RM';
   return 'Sin grupo';
 }
 
@@ -94,7 +98,7 @@ function featureName(feature) {
 
 function featureId(feature) {
   const p = feature.properties || {};
-  return p.id || p.codigo || p.objectid || 'S/I';
+  return p.id || p.codigo || p.codigo_oaci || p.codigo_iata || p.osm_id || p.objectid || 'S/I';
 }
 
 function featureCommune(feature) {
@@ -105,13 +109,20 @@ function featureCommune(feature) {
 function popupHtml(feature, distance = null) {
   const p = feature.properties || {};
   const n = networkOf(feature);
+  const extraAeronautico = ['aerodromos', 'helipuertos'].includes(feature.__network) ? `
+    <p><b>Código OACI:</b> ${escapeHtml(p.codigo_oaci || 'S/I')}</p>
+    <p><b>Código IATA:</b> ${escapeHtml(p.codigo_iata || 'S/I')}</p>
+    <p><b>Uso / operador:</b> ${escapeHtml(p.uso || p.operador || 'S/I')}</p>
+    <p><b>Superficie:</b> ${escapeHtml(p.superficie || 'S/I')}</p>
+    <p><b>Fuente:</b> ${escapeHtml(p.fuente || p.red || 'S/I')}</p>` : '';
   return `<div class="popup-card">
     <h3>${escapeHtml(featureName(feature))}</h3>
     <p><b>Red:</b> ${escapeHtml(n.label)}</p>
     <p><b>Grupo:</b> ${escapeHtml(subgroupOf(feature))}</p>
     <p><b>Comuna:</b> ${escapeHtml(featureCommune(feature))}</p>
-    <p><b>Tramo / referencia:</b> ${escapeHtml(p.tramo || p.direccion || 'S/I')}</p>
+    <p><b>Tramo / referencia:</b> ${escapeHtml(p.tramo || p.direccion || p.region || 'S/I')}</p>
     <p><b>Tipo:</b> ${escapeHtml(p.tipo_peaje || p.tipo || 'S/I')}</p>
+    ${extraAeronautico}
     ${distance != null ? `<p><b>Distancia:</b> ${distance.toFixed(2)} km</p>` : ''}
   </div>`;
 }
@@ -247,7 +258,7 @@ function applyFilters() {
     if (!state.activeGroups.get(feature.__network)?.has(feature.__subgroup)) return false;
     if (!term) return true;
     const p = feature.properties || {};
-    const haystack = normalizeText([featureName(feature), feature.__subgroup, featureCommune(feature), p.tramo, p.direccion, p.tipo_peaje, p.tipo, p.prefectura, p.provincia, p.codigo].join(' '));
+    const haystack = normalizeText([featureName(feature), feature.__subgroup, featureCommune(feature), p.tramo, p.direccion, p.tipo_peaje, p.tipo, p.prefectura, p.provincia, p.codigo, p.codigo_oaci, p.codigo_iata, p.operador, p.uso, p.superficie, p.fuente, p.osm_id].join(' '));
     return haystack.includes(term);
   });
   renderMarkers();
