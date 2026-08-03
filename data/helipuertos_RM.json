@@ -34,23 +34,6 @@
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
-    "nombre": "Aras de La Compañia Helipad",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "",
-    "superficie": "",
-    "lat": -34.0842996,
-    "lon": -70.6800935,
-    "fuente": "OpenStreetMap",
-    "osm_id": "way/213141287",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
     "nombre": "Hospital de Carabineros",
     "tipo": "Helipuerto",
     "codigo_oaci": "",
@@ -320,40 +303,6 @@
     "lon": -70.5785898,
     "fuente": "OpenStreetMap",
     "osm_id": "way/870612427",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
-    "nombre": "Helipuerto La Gonzalina",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "",
-    "superficie": "concrete",
-    "lat": -34.1403679,
-    "lon": -70.7710677,
-    "fuente": "OpenStreetMap",
-    "osm_id": "way/931609698",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
-    "nombre": "Helipuerto",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "Codelco División El Teniente",
-    "superficie": "asphalt",
-    "lat": -34.0930732,
-    "lon": -70.5219523,
-    "fuente": "OpenStreetMap",
-    "osm_id": "way/938253562",
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
@@ -1275,40 +1224,6 @@
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
-    "nombre": "Discovery Air Innovations Ltda.",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "",
-    "superficie": "",
-    "lat": -34.2107939,
-    "lon": -70.7160216,
-    "fuente": "OpenStreetMap",
-    "osm_id": "way/1241461486",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
-    "nombre": "Helipuerto Los Lirios",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "",
-    "superficie": "concrete",
-    "lat": -34.2324571,
-    "lon": -70.7915,
-    "fuente": "OpenStreetMap",
-    "osm_id": "way/1241461693",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
     "nombre": "Helipuerto",
     "tipo": "Helipuerto",
     "codigo_oaci": "2",
@@ -1496,23 +1411,6 @@
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
-    "nombre": "Hospital Provincial",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "Servicio de Salud Provincial San Antonio",
-    "superficie": "concrete",
-    "lat": -33.5887267,
-    "lon": -71.6097521,
-    "fuente": "OpenStreetMap",
-    "osm_id": "way/1253345134",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
     "nombre": "Mutual de Seguridad",
     "tipo": "Helipuerto",
     "codigo_oaci": "",
@@ -1663,23 +1561,6 @@
     "lon": -71.1541783,
     "fuente": "OpenStreetMap",
     "osm_id": "way/1265450755",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
-    "nombre": "Helipuerto Hospital Biprovincial",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "",
-    "superficie": "",
-    "lat": -32.9017659,
-    "lon": -71.2531562,
-    "fuente": "OpenStreetMap",
-    "osm_id": "way/1265451406",
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
@@ -2074,23 +1955,6 @@
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
-    "nombre": "Fundo Santa Rosa",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "",
-    "superficie": "paved",
-    "lat": -34.2552427,
-    "lon": -71.0306573,
-    "fuente": "OpenStreetMap",
-    "osm_id": "way/1291975151",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
     "nombre": "Helipuerto",
     "tipo": "Helipuerto",
     "codigo_oaci": "",
@@ -2105,23 +1969,6 @@
     "lon": -70.8155243,
     "fuente": "OpenStreetMap",
     "osm_id": "way/1296990344",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
-    "nombre": "Hotel 6 CONAF",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "CONAF",
-    "superficie": "asphalt",
-    "lat": -34.3707882,
-    "lon": -71.177178,
-    "fuente": "OpenStreetMap",
-    "osm_id": "way/1299896562",
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
@@ -2431,23 +2278,6 @@
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
-    "nombre": "Helipuerto Gobernación Marítima de San Antonio",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "",
-    "superficie": "paved",
-    "lat": -33.5756984,
-    "lon": -71.6243452,
-    "fuente": "OpenStreetMap",
-    "osm_id": "way/1357568220",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
     "nombre": "Helipuerto",
     "tipo": "Helipuerto",
     "codigo_oaci": "",
@@ -2479,23 +2309,6 @@
     "lon": -70.7432617,
     "fuente": "OpenStreetMap",
     "osm_id": "way/1363745274",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
-    "nombre": "Helipuerto Subestación Las Vegas",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "",
-    "superficie": "grass",
-    "lat": -32.8420487,
-    "lon": -71.0112692,
-    "fuente": "OpenStreetMap",
-    "osm_id": "way/1377551450",
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
@@ -2873,40 +2686,6 @@
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
-    "nombre": "Helipuerto Lo Ovalle",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "",
-    "superficie": "",
-    "lat": -33.2541163,
-    "lon": -71.3710975,
-    "fuente": "OpenStreetMap",
-    "osm_id": "node/1042137991",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
-    "nombre": "Portillo Heliport",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "",
-    "superficie": "",
-    "lat": -32.8362131,
-    "lon": -70.1311022,
-    "fuente": "OpenStreetMap",
-    "osm_id": "node/1042138028",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
     "nombre": "Nazareno II Heliport",
     "tipo": "Helipuerto",
     "codigo_oaci": "SHAH",
@@ -2941,23 +2720,6 @@
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
-    "nombre": "Bahía Los Primos Heliport",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "",
-    "superficie": "",
-    "lat": -34.1145461,
-    "lon": -71.5378715,
-    "fuente": "OpenStreetMap",
-    "osm_id": "node/1042151840",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
     "nombre": "El Conquistador Heliport",
     "tipo": "Helipuerto",
     "codigo_oaci": "",
@@ -2972,23 +2734,6 @@
     "lon": -70.6505585,
     "fuente": "OpenStreetMap",
     "osm_id": "node/1042151935",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
-    "nombre": "San Francisco Heliport",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "",
-    "superficie": "",
-    "lat": -34.1597214,
-    "lon": -71.7516632,
-    "fuente": "OpenStreetMap",
-    "osm_id": "node/1042151968",
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
@@ -3349,23 +3094,6 @@
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
-    "nombre": "Helipuerto VIK Chile Hotel & Winery",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "VIK",
-    "superficie": "paved",
-    "lat": -34.5391456,
-    "lon": -71.2282216,
-    "fuente": "OpenStreetMap",
-    "osm_id": "node/7571841483",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
     "nombre": "Helipuerto",
     "tipo": "Helipuerto",
     "codigo_oaci": "",
@@ -3638,23 +3366,6 @@
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
-    "nombre": "Tivar Helicópteros",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "Tivar",
-    "superficie": "",
-    "lat": -32.8925284,
-    "lon": -71.2362362,
-    "fuente": "OpenStreetMap",
-    "osm_id": "node/12073460646",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
     "nombre": "Helipuerto",
     "tipo": "Helipuerto",
     "codigo_oaci": "",
@@ -3705,24 +3416,7 @@
     "osm_id": "node/12563398873",
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
-  {
-    "nombre": "Helipuerto Hospital Gustavo Fricke",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "",
-    "superficie": "concrete",
-    "lat": -33.0293656,
-    "lon": -71.5427855,
-    "fuente": "OpenStreetMap",
-    "osm_id": "node/12565360214",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
+   {
     "nombre": "Helipuerto",
     "tipo": "Helipuerto",
     "codigo_oaci": "",
@@ -3788,23 +3482,6 @@
     "lon": -71.5596821,
     "fuente": "OpenStreetMap",
     "osm_id": "node/12565360222",
-    "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
-  },
-  {
-    "nombre": "Conaf",
-    "tipo": "Helipuerto",
-    "codigo_oaci": "",
-    "codigo_iata": "",
-    "region": "",
-    "comuna": "",
-    "uso": "",
-    "red": "OSM",
-    "operador": "",
-    "superficie": "unpaved",
-    "lat": -33.0677803,
-    "lon": -71.5590392,
-    "fuente": "OpenStreetMap",
-    "osm_id": "node/12565360246",
     "nota": "Dato referencial colaborativo; validar en fuentes oficiales cuando sea crítico."
   },
   {
