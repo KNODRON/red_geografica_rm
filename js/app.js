@@ -6,7 +6,7 @@ const CONFIG = {
   nearbyKm: 3,
   networks: [
     { id: 'autopistas', label: 'AUTOPISTAS', color: '#4CAF50', file: 'data/autopistas.geojson', icon: 'A' },
-    { id: 'municipalidades', label: 'MUNICIPALIDADES', color: '#8E44AD', file: 'data/municipalidades.geojson', icon: 'M' },
+    { id: 'municipalidades', label: 'MUNICIPALIDADES', color: '#8E44AD', file: 'data/municipalidades.json', icon: 'M' },
     { id: 'transportes', label: 'MINISTERIO DE TRANSPORTES', color: '#178BC1', file: 'data/transportes.geojson', icon: 'T' },
     { id: 'spd', label: 'S.P.D.', color: '#E74C3C', file: 'data/spd.geojson', icon: 'S' },
     { id: 'cuarteles', label: 'CUARTELES CARABINEROS', color: '#D4A017', file: 'data/cuarteles_rm.geojson', icon: 'C' },
