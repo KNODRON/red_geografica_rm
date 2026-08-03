@@ -1,2 +1,167 @@
 [
+  {
+    "id": 1,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 1",
+    "direccion": "Santa Rosa/ Venancia Leiva",
+    "lat": -33.558028,
+    "lon": -70.631250,
+    "empresa": "INGESMART S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  },
+  {
+    "id": 2,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 2",
+    "direccion": "Santa Rosa/ Americo Vespucio Sur",
+    "lat": -33.542806,
+    "lon": -70.634333,
+    "empresa": "INGESMART S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  },
+  {
+    "id": 3,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 3",
+    "direccion": "Santa Rosa / Americi Vespucio Norte",
+    "lat": -33.542028,
+    "lon": -70.634083,
+    "empresa": "INGESMART S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  },
+  {
+    "id": 4,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 4",
+    "direccion": "Metro San Ramon Lado Sur",
+    "lat": -33.541444,
+    "lon": -70.643389,
+    "empresa": "INGESMART S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  },
+  {
+    "id": 5,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 5",
+    "direccion": "Pedro Aguirre Cerda / Avenida Ossa",
+    "lat": -33.543361,
+    "lon": -70.636917,
+    "empresa": "INGESMART S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  },
+  {
+    "id": 6,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 6",
+    "direccion": "Uruguay Santa Rosa",
+    "lat": -33.534111,
+    "lon": -70.634722,
+    "empresa": "INGESMART S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  },
+  {
+    "id": 7,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 7",
+    "direccion": "Los Franciscanos / Juan Bautista",
+    "lat": -33.545000,
+    "lon": -70.635583,
+    "empresa": "INGESMART S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  },
+  {
+    "id": 8,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 8",
+    "direccion": "Vicuña Maquena / San Francisco",
+    "lat": -33.544944,
+    "lon": -70.651917,
+    "empresa": "INGESMART S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  },
+  {
+    "id": 9,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 9",
+    "direccion": "Doñihue / Santa Rosa",
+    "lat": -33.537694,
+    "lon": -70.634639,
+    "empresa": "INGESMART S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  },
+  {
+    "id": 10,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 10",
+    "direccion": "Esperanza / Caupolican",
+    "lat": -33.553833,
+    "lon": -70.633917,
+    "empresa": "INGESMART S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  },
+  {
+    "id": 11,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 11",
+    "direccion": "Venancia Leiva / San Francisco",
+    "lat": -33.554944,
+    "lon": -70.654417,
+    "empresa": "BIONIC S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  },
+  {
+    "id": 12,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 12",
+    "direccion": "Venancia Leiva / Almirante Latorre",
+    "lat": -33.556250,
+    "lon": -70.645583,
+    "empresa": "BIONIC S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  },
+  {
+    "id": 13,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 13",
+    "direccion": "Av. Ossa / Almirante Latorre",
+    "lat": -33.542778,
+    "lon": -70.642667,
+    "empresa": "BIONIC S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  },
+  {
+    "id": 14,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 14",
+    "direccion": "Santa Rosa / Los Maitenes",
+    "lat": -33.526444,
+    "lon": -70.635917,
+    "empresa": "BIONIC S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  },
+  {
+    "id": 15,
+    "municipalidad": "San Ramón",
+    "camara": "Cámara 15",
+    "direccion": "Independencia / Til Til",
+    "lat": -33.540750,
+    "lon": -70.638167,
+    "empresa": "BIONIC S.A",
+    "estado": "OPERATIVA",
+    "fuente": "Municipalidad de San Ramón"
+  }
 ]
