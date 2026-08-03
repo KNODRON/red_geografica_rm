@@ -1,0 +1,44 @@
+{
+  "capas": [
+    {
+      "id": "autopistas",
+      "nombre": "Autopistas",
+      "archivo": "data/autopistas.geojson",
+      "tipo": "geojson",
+      "color": "#27ae60",
+      "icono": "road"
+    },
+    {
+      "id": "carabineros",
+      "nombre": "Carabineros",
+      "archivo": "data/cuarteles_rm.geojson",
+      "tipo": "geojson",
+      "color": "#f1c40f",
+      "icono": "shield"
+    },
+    {
+      "id": "municipalidades",
+      "nombre": "Municipalidades",
+      "archivo": "data/municipalidades.json",
+      "tipo": "json",
+      "color": "#8e44ad",
+      "icono": "camera"
+    },
+    {
+      "id": "aerodromos",
+      "nombre": "Aeródromos",
+      "archivo": "data/aerodromos_RM.json",
+      "tipo": "json",
+      "color": "#e67e22",
+      "icono": "plane"
+    },
+    {
+      "id": "helipuertos",
+      "nombre": "Helipuertos",
+      "archivo": "data/helipuertos_RM.json",
+      "tipo": "json",
+      "color": "#3498db",
+      "icono": "helicopter"
+    }
+  ]
+}
