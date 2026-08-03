@@ -3,7 +3,7 @@
 const CONFIG = {
   center: [-33.52, -70.67],
   zoom: 10,
-  nearbyKm: 3,
+  nearbyKm: 1,
   networks: [
     { id: 'autopistas', label: 'AUTOPISTAS', color: '#4CAF50', file: 'data/autopistas.geojson', icon: 'A' },
     { id: 'municipalidades', label: 'MUNICIPALIDADES', color: '#8E44AD', file: 'data/municipalidades.json', icon: 'M' },
@@ -199,31 +199,77 @@ function buildGroupState() {
 function renderNetworkTree() {
   const root = $('networkTree');
   root.innerHTML = '';
-  CONFIG.networks.forEach((network, index) => {
-    const features = state.features.filter(f => f.__network === network.id);
-    const groups = [...new Set(features.map(f => f.__subgroup))].sort((a,b) => a.localeCompare(b,'es'));
-    const section = document.createElement('section');
-    section.className = `network-group ${index === 0 ? 'open' : ''}`;
-    section.style.setProperty('--group-color', network.color);
-    section.innerHTML = `<button class="group-header">
+
+  const principalIds = ['autopistas', 'transportes', 'spd'];
+  const otherIds = CONFIG.networks
+    .map(network => network.id)
+    .filter(id => !principalIds.includes(id));
+
+  principalIds.forEach((id, index) => {
+    const network = CONFIG.networks.find(item => item.id === id);
+    if (network) root.appendChild(createNetworkSection(network, index === 0));
+  });
+
+  const otherWrapper = document.createElement('section');
+  otherWrapper.className = 'other-networks open';
+  otherWrapper.innerHTML = `
+    <button class="other-networks-header" type="button" aria-expanded="true">
+      <span class="other-arrow">▼</span>
+      <span>OTRAS REDES</span>
+    </button>
+    <div class="other-networks-body"></div>
+  `;
+
+  const otherBody = otherWrapper.querySelector('.other-networks-body');
+  otherIds.forEach(id => {
+    const network = CONFIG.networks.find(item => item.id === id);
+    if (network) otherBody.appendChild(createNetworkSection(network, false));
+  });
+
+  otherWrapper.querySelector('.other-networks-header').addEventListener('click', () => {
+    const isOpen = otherWrapper.classList.toggle('open');
+    otherWrapper.querySelector('.other-arrow').textContent = isOpen ? '▼' : '►';
+    otherWrapper.querySelector('.other-networks-header').setAttribute('aria-expanded', String(isOpen));
+  });
+
+  root.appendChild(otherWrapper);
+}
+
+function createNetworkSection(network, openByDefault = false) {
+  const features = state.features.filter(feature => feature.__network === network.id);
+  const groups = [...new Set(features.map(feature => feature.__subgroup))]
+    .sort((a, b) => a.localeCompare(b, 'es'));
+
+  const section = document.createElement('section');
+  section.className = `network-group ${openByDefault ? 'open' : ''}`;
+  section.style.setProperty('--group-color', network.color);
+  section.innerHTML = `
+    <button class="group-header" type="button" aria-expanded="${openByDefault}">
       <span class="group-icon" style="background:${network.color}">${network.icon}</span>
       <span class="group-name">${network.label}</span>
       <span class="group-count">${features.length}</span>
-    </button><div class="group-body"></div>`;
-    section.querySelector('.group-header').addEventListener('click', () => section.classList.toggle('open'));
-    const body = section.querySelector('.group-body');
-    if (!groups.length) {
-      body.innerHTML = '<div class="group-empty">Sin datos cargados por el momento.</div>';
-    } else {
-      const allRow = createLayerRow(network, '__all__', `Todas (${features.length})`, features.length, true);
-      body.appendChild(allRow);
-      groups.forEach(group => {
-        const count = features.filter(f => f.__subgroup === group).length;
-        body.appendChild(createLayerRow(network, group, group, count, true));
-      });
-    }
-    root.appendChild(section);
+    </button>
+    <div class="group-body"></div>
+  `;
+
+  const header = section.querySelector('.group-header');
+  header.addEventListener('click', () => {
+    const isOpen = section.classList.toggle('open');
+    header.setAttribute('aria-expanded', String(isOpen));
   });
+
+  const body = section.querySelector('.group-body');
+  if (!groups.length) {
+    body.innerHTML = '<div class="group-empty">Sin datos cargados por el momento.</div>';
+  } else {
+    body.appendChild(createLayerRow(network, '__all__', `Todas (${features.length})`, features.length, true));
+    groups.forEach(group => {
+      const count = features.filter(feature => feature.__subgroup === group).length;
+      body.appendChild(createLayerRow(network, group, group, count, true));
+    });
+  }
+
+  return section;
 }
 
 function createLayerRow(network, group, label, count, checked) {
@@ -385,9 +431,125 @@ function startDraw(type) {
 
 function setActiveTool(id) { document.querySelectorAll('.tool-button').forEach(b=>b.classList.toggle('active',b.id===id)); }
 
+async function executeSearch() {
+  const query = $('searchInput').value.trim();
+  if (!query) {
+    applyFilters();
+    showToast('Escribe una dirección, intersección o punto de interés.');
+    return;
+  }
+
+  const searchButton = $('searchButton');
+  searchButton.disabled = true;
+  searchButton.textContent = '…';
+
+  try {
+    const found = await geocodeAddress(query);
+
+    if (found) {
+      const latlng = L.latLng(found.lat, found.lon);
+      map.flyTo(latlng, 16, { duration: 0.8 });
+      selectNearby(latlng);
+      state.pointMode = false;
+      setActiveTool('');
+      showToast('Ubicación encontrada. Se muestran los puntos dentro de 1 km.');
+      return;
+    }
+
+    applyFilters();
+    const internalMatches = state.visible.filter(feature => {
+      const value = normalizeText([
+        featureName(feature),
+        feature.__subgroup,
+        featureCommune(feature),
+        feature.properties?.direccion,
+        feature.properties?.tramo
+      ].join(' '));
+      return value.includes(normalizeText(query));
+    });
+
+    if (internalMatches.length) {
+      const feature = internalMatches[0];
+      const latlng = coords(feature);
+      map.flyTo(latlng, 16, { duration: 0.8 });
+      selectNearby(latlng);
+      showToast('No se encontró la dirección exacta; se centró el primer punto coincidente.');
+    } else {
+      showToast('No se encontró esa dirección o intersección en la Región Metropolitana.');
+    }
+  } catch (error) {
+    console.error(error);
+    applyFilters();
+    showToast('No fue posible consultar la dirección. Revisa la conexión a Internet.');
+  } finally {
+    searchButton.disabled = false;
+    searchButton.textContent = '⌕';
+  }
+}
+
+function intersectionQueries(query) {
+  const trimmed = query.trim();
+  const context = 'Región Metropolitana, Chile';
+  const variants = [trimmed];
+
+  if (/\s+(con|y)\s+|[&/]/i.test(trimmed)) {
+    const streets = trimmed
+      .split(/\s+(?:con|y)\s+|[&/]/i)
+      .map(value => value.trim())
+      .filter(Boolean);
+
+    if (streets.length >= 2) {
+      variants.push(`${streets[0]} y ${streets[1]}`);
+      variants.push(`${streets[0]}, ${streets[1]}`);
+      variants.push(`${streets[0]} & ${streets[1]}`);
+    }
+  }
+
+  return [...new Set(variants.map(value => `${value}, ${context}`))];
+}
+
+async function geocodeAddress(query) {
+  const viewbox = '-71.75,-32.85,-69.85,-34.35';
+
+  for (const candidate of intersectionQueries(query)) {
+    const params = new URLSearchParams({
+      format: 'jsonv2',
+      q: candidate,
+      countrycodes: 'cl',
+      viewbox,
+      bounded: '1',
+      limit: '1',
+      addressdetails: '1',
+      'accept-language': 'es'
+    });
+
+    const response = await fetch(`https://nominatim.openstreetmap.org/search?${params.toString()}`, {
+      headers: { Accept: 'application/json' }
+    });
+
+    if (!response.ok) throw new Error(`Geocodificación: HTTP ${response.status}`);
+    const results = await response.json();
+    if (results.length) {
+      return {
+        lat: Number(results[0].lat),
+        lon: Number(results[0].lon),
+        label: results[0].display_name
+      };
+    }
+  }
+
+  return null;
+}
+
 function bindUI() {
   $('searchInput').addEventListener('input', applyFilters);
-  $('searchButton').addEventListener('click', applyFilters);
+  $('searchInput').addEventListener('keydown', event => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      executeSearch();
+    }
+  });
+  $('searchButton').addEventListener('click', executeSearch);
   $('btnCercanos').addEventListener('click',()=>{ state.pointMode=true; setActiveTool('toolPoint'); showToast(`Haz clic en el mapa. Se buscarán puntos a ${CONFIG.nearbyKm} km.`); });
   $('toolPoint').addEventListener('click',()=>{ state.pointMode=true; if(state.drawHandler)state.drawHandler.disable(); setActiveTool('toolPoint'); });
   $('toolCircle').addEventListener('click',()=>startDraw('circle'));
