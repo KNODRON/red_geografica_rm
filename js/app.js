@@ -11,7 +11,8 @@ const CONFIG = {
     { id: 'spd', label: 'S.P.D.', color: '#E74C3C', file: 'data/spd.geojson', icon: 'S' },
     { id: 'cuarteles', label: 'CUARTELES CARABINEROS', color: '#D4A017', file: 'data/cuarteles_rm.geojson', icon: 'C' },
     { id: 'aerodromos', label: 'AERÓDROMOS / AEROPUERTOS', color: '#F97316', file: 'data/aerodromos_RM.json', icon: 'A' },
-    { id: 'helipuertos', label: 'HELIPUERTOS', color: '#2563EB', file: 'data/helipuertos_RM.json', icon: 'H' }
+    { id: 'helipuertos', label: 'HELIPUERTOS', color: '#2563EB', file: 'data/helipuertos_RM.json', icon: 'H' },
+    { id: 'red_asistencial', label: 'RED ASISTENCIAL', color: '#E53935', file: 'data/centros_salud_rm.json', icon: '+' }
   ]
 };
 
