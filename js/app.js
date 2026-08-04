@@ -32,6 +32,24 @@ const state = {
 };
 
 const map = L.map('map', { zoomControl: false, preferCanvas: true }).setView(CONFIG.center, CONFIG.zoom);
+/*
+ * CAPAS VISUALES
+ *
+ * selectionPane:
+ * círculo, rectángulo y polígono de selección.
+ * Queda debajo de todos los puntos y no bloquea los clics.
+ *
+ * referencePane:
+ * pin rojo correspondiente al lugar consultado.
+ * Queda por encima de los demás elementos.
+ */
+map.createPane('selectionPane');
+map.getPane('selectionPane').style.zIndex = 350;
+map.getPane('selectionPane').style.pointerEvents = 'none';
+
+map.createPane('referencePane');
+map.getPane('referencePane').style.zIndex = 650;
+map.getPane('referencePane').style.pointerEvents = 'auto';
 const tiles = {
   light: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 20, attribution: '&copy; OpenStreetMap &copy; CARTO' }),
   osm: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; OpenStreetMap' }),
@@ -41,6 +59,18 @@ tiles.light.addTo(map);
 
 const markerLayer = L.layerGroup().addTo(map);
 const selectionLayer = L.featureGroup().addTo(map);
+
+const referenceIcon = L.divIcon({
+  className: 'reference-pin-wrapper',
+  html: `
+    <div class="reference-pin">
+      <div class="reference-pin-center"></div>
+    </div>
+  `,
+  iconSize: [34, 46],
+  iconAnchor: [17, 44],
+  popupAnchor: [0, -42]
+});
 
 const $ = id => document.getElementById(id);
 
@@ -530,8 +560,28 @@ function renderMarkers() {
 function selectNearby(latlng) {
   clearSelection(false);
   state.referencePoint = latlng;
-  state.queryMarker = L.circleMarker(latlng, { radius: 8, color: '#fff', weight: 3, fillColor: '#ff7b19', fillOpacity: 1 }).addTo(selectionLayer);
-  const radius = L.circle(latlng, { radius: CONFIG.nearbyKm * 1000, color: '#2c8fee', weight: 2, dashArray: '7 6', fillColor: '#2c8fee', fillOpacity: .07 }).addTo(selectionLayer);
+  state.queryMarker = L.marker(latlng, {
+  icon: referenceIcon,
+  pane: 'referencePane',
+  keyboard: false,
+  zIndexOffset: 1000
+})
+  .addTo(selectionLayer)
+  .bindTooltip('Ubicación consultada', {
+    direction: 'top',
+    offset: [0, -38],
+    opacity: 0.9
+  });
+  const radius = L.circle(latlng, {
+  pane: 'selectionPane',
+  interactive: false,
+  radius: CONFIG.nearbyKm * 1000,
+  color: '#2c8fee',
+  weight: 2,
+  dashArray: '7 6',
+  fillColor: '#2c8fee',
+  fillOpacity: 0.07
+}).addTo(selectionLayer);
   state.selectedShape = radius;
   state.selected = state.visible.filter(f => distanceKm(latlng, coords(f)) <= CONFIG.nearbyKm).sort((a,b) => distanceKm(latlng,coords(a)) - distanceKm(latlng,coords(b)));
   renderResults();
@@ -621,7 +671,17 @@ function clearSelection(resetResults=true) {
 function startDraw(type) {
   clearSelection();
   if(state.drawHandler) state.drawHandler.disable();
-  const options={ shapeOptions:{color:'#2c8fee',weight:3,dashArray:'8 6',fillColor:'#2c8fee',fillOpacity:.12} };
+  const options = {
+  shapeOptions: {
+    pane: 'selectionPane',
+    interactive: false,
+    color: '#2c8fee',
+    weight: 3,
+    dashArray: '8 6',
+    fillColor: '#2c8fee',
+    fillOpacity: 0.12
+  }
+};
   if(type==='circle') state.drawHandler=new L.Draw.Circle(map,options);
   if(type==='rectangle') state.drawHandler=new L.Draw.Rectangle(map,options);
   if(type==='polygon') state.drawHandler=new L.Draw.Polygon(map,{...options,allowIntersection:false,showArea:true});
