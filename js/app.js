@@ -79,6 +79,81 @@ function longAutopista(contract = '') {
   return value || 'Otras autopistas';
 }
 
+function healthSubgroup(type = '') {
+  const normalized = normalizeText(type);
+
+  if (normalized.includes('hospital')) {
+    return 'Hospitales';
+  }
+
+  if (normalized.includes('sapu')) {
+    return 'SAPU';
+  }
+
+  if (
+    normalized.includes('servicio de alta resolutividad') ||
+    normalized.includes('(sar)')
+  ) {
+    return 'SAR';
+  }
+
+  if (normalized.includes('cesfam')) {
+    return 'CESFAM';
+  }
+
+  if (normalized.includes('centro de salud familiar')) {
+    return 'CESFAM';
+  }
+
+  if (normalized.includes('crs')) {
+    return 'CRS';
+  }
+
+  if (normalized.includes('centro de referencia de salud')) {
+    return 'CRS';
+  }
+
+  if (normalized.includes('samu')) {
+    return 'SAMU';
+  }
+
+  if (
+    normalized.includes('centro de regulacion medica') ||
+    normalized.includes('atencion prehospitalaria')
+  ) {
+    return 'SAMU';
+  }
+
+  if (
+    normalized.includes('posta de salud rural') ||
+    normalized.includes('(psr)')
+  ) {
+    return 'Postas rurales';
+  }
+
+  if (
+    normalized.includes('consultorio') ||
+    normalized.includes('centro comunitario de salud familiar') ||
+    normalized.includes('cecosf')
+  ) {
+    return 'Consultorios y CECOSF';
+  }
+
+  if (normalized.includes('atencion remota')) {
+    return 'Atención remota';
+  }
+
+  if (normalized.includes('direccion servicio de salud')) {
+    return 'Administración de salud';
+  }
+
+  if (normalized.includes('prais')) {
+    return 'PRAIS';
+  }
+
+  return type || 'Otros centros asistenciales';
+}
+
 function subgroupOf(feature) {
   const p = feature.properties || {};
   if (feature.__network === 'autopistas') return longAutopista(p.contrato);
@@ -88,6 +163,9 @@ function subgroupOf(feature) {
   if (feature.__network === 'cuarteles') return p.prefectura || p.tipo || 'Cuarteles RM';
   if (feature.__network === 'aerodromos') return p.tipo || p.red || 'Infraestructura aeronáutica';
   if (feature.__network === 'helipuertos') return p.operador || p.red || 'Helipuertos RM';
+  if (feature.__network === 'red_asistencial') {
+  return healthSubgroup(p.tipo);
+}
   return 'Sin grupo';
 }
 
@@ -115,6 +193,19 @@ function popupHtml(feature, distance = null) {
     <p><b>Uso / operador:</b> ${escapeHtml(p.uso || p.operador || 'S/I')}</p>
     <p><b>Superficie:</b> ${escapeHtml(p.superficie || 'S/I')}</p>
     <p><b>Fuente:</b> ${escapeHtml(p.fuente || p.red || 'S/I')}</p>` : '';
+  const extraSalud =
+  feature.__network === 'red_asistencial'
+    ? `
+      <p><b>Tipo de establecimiento:</b> ${escapeHtml(p.tipo || 'S/I')}</p>
+      <p><b>Atención de urgencia:</b> ${escapeHtml(
+        p.tipo_urgencia && p.tipo_urgencia !== 'None'
+          ? p.tipo_urgencia
+          : 'No informada'
+      )}</p>
+      <p><b>Prestador:</b> ${escapeHtml(p.prestador || 'S/I')}</p>
+      <p><b>Dirección:</b> ${escapeHtml(p.direccion || 'S/I')}</p>
+    `
+    : '';
   return `<div class="popup-card">
     <h3>${escapeHtml(featureName(feature))}</h3>
     <p><b>Red:</b> ${escapeHtml(n.label)}</p>
@@ -123,6 +214,7 @@ function popupHtml(feature, distance = null) {
     <p><b>Tramo / referencia:</b> ${escapeHtml(p.tramo || p.direccion || p.region || 'S/I')}</p>
     <p><b>Tipo:</b> ${escapeHtml(p.tipo_peaje || p.tipo || 'S/I')}</p>
     ${extraAeronautico}
+    ${extraSalud}
     ${distance != null ? `<p><b>Distancia:</b> ${distance.toFixed(2)} km</p>` : ''}
   </div>`;
 }
@@ -410,7 +502,7 @@ function applyFilters(ignoreSearchTerm = false) {
     if (!state.activeGroups.get(feature.__network)?.has(feature.__subgroup)) return false;
     if (!term) return true;
     const p = feature.properties || {};
-    const haystack = normalizeText([featureName(feature), feature.__subgroup, featureCommune(feature), p.tramo, p.direccion, p.tipo_peaje, p.tipo, p.prefectura, p.provincia, p.codigo, p.codigo_oaci, p.codigo_iata, p.operador, p.uso, p.superficie, p.fuente, p.osm_id].join(' '));
+    const haystack = normalizeText([featureName(feature), feature.__subgroup, featureCommune(feature), p.tramo, p.direccion, p.tipo_peaje, p.tipo, p.tipo_urgencia, p.prestador, p.prefectura, p.provincia, p.codigo, p.codigo_oaci, p.codigo_iata, p.operador, p.uso, p.superficie, p.fuente, p.osm_id].join(' '));
     return haystack.includes(term);
   });
   renderMarkers();
