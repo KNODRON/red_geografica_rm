@@ -138,3 +138,33 @@ tbody tr:hover { background: rgba(121,211,76,.1); }
   .results-dock { grid-template-columns: 200px 220px 140px minmax(380px,1fr); overflow-x: auto; }
   .selection-tools { right: 62px; grid-template-columns: repeat(5,45px); }
 }
+
+/* Pin de la ubicación consultada */
+.reference-pin-wrapper {
+  background: transparent;
+  border: 0;
+}
+
+.reference-pin {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #e53935;
+  border: 3px solid #ffffff;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  box-shadow:
+    0 3px 7px rgba(0, 0, 0, 0.38),
+    0 0 0 2px rgba(229, 57, 53, 0.2);
+}
+
+.reference-pin-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  background: #ffffff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
