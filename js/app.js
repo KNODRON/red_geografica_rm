@@ -200,15 +200,20 @@ function buildGroupState() {
     const groups = [
       ...new Set(
         state.features
-          .filter(feature => feature.__network === network.id)
-          .map(feature => feature.__subgroup)
+          .filter(
+            feature =>
+              feature.__network === network.id
+          )
+          .map(
+            feature =>
+              feature.__subgroup
+          )
       )
-    ].sort((a, b) => a.localeCompare(b, 'es'));
+    ].sort(
+      (a, b) =>
+        a.localeCompare(b, 'es')
+    );
 
-    /*
-     * Solo las redes principales comienzan activadas.
-     * Las redes incluidas en "OTRAS REDES" comienzan ocultas.
-     */
     state.activeGroups.set(
       network.id,
       principalIds.includes(network.id)
@@ -232,7 +237,11 @@ function renderNetworkTree() {
     if (network) root.appendChild(createNetworkSection(network, index === 0));
   });
 
+  const otherWrapper =
+  document.createElement('section');
+
   otherWrapper.className = 'other-networks';
+
   otherWrapper.innerHTML = `
     <button
       class="other-networks-header"
@@ -262,63 +271,107 @@ function renderNetworkTree() {
 }
 
 function createNetworkSection(network, openByDefault = false) {
-  const features = state.features.filter(feature => feature.__network === network.id);
-  const groups = [...new Set(features.map(feature => feature.__subgroup))]
-    .sort((a, b) => a.localeCompare(b, 'es'));
+  const features = state.features.filter(
+    feature => feature.__network === network.id
+  );
+
+  const groups = [
+    ...new Set(
+      features.map(feature => feature.__subgroup)
+    )
+  ].sort((a, b) => a.localeCompare(b, 'es'));
 
   const section = document.createElement('section');
-  section.className = `network-group ${openByDefault ? 'open' : ''}`;
-  section.style.setProperty('--group-color', network.color);
+
+  section.className =
+    `network-group ${openByDefault ? 'open' : ''}`;
+
+  section.style.setProperty(
+    '--group-color',
+    network.color
+  );
+
   section.innerHTML = `
-    <button class="group-header" type="button" aria-expanded="${openByDefault}">
-      <span class="group-icon" style="background:${network.color}">${network.icon}</span>
-      <span class="group-name">${network.label}</span>
-      <span class="group-count">${features.length}</span>
+    <button
+      class="group-header"
+      type="button"
+      aria-expanded="${openByDefault}"
+    >
+      <span
+        class="group-icon"
+        style="background:${network.color}"
+      >
+        ${network.icon}
+      </span>
+
+      <span class="group-name">
+        ${network.label}
+      </span>
+
+      <span class="group-count">
+        ${features.length}
+      </span>
     </button>
+
     <div class="group-body"></div>
   `;
 
   const header = section.querySelector('.group-header');
+
   header.addEventListener('click', () => {
     const isOpen = section.classList.toggle('open');
-    header.setAttribute('aria-expanded', String(isOpen));
+
+    header.setAttribute(
+      'aria-expanded',
+      String(isOpen)
+    );
   });
 
   const body = section.querySelector('.group-body');
+
   if (!groups.length) {
-    body.innerHTML = '<div class="group-empty">Sin datos cargados por el momento.</div>';
+    body.innerHTML = `
+      <div class="group-empty">
+        Sin datos cargados por el momento.
+      </div>
+    `;
   } else {
-    const activeSet = state.activeGroups.get(network.id);
-const allActive =
-  groups.length > 0 &&
-  groups.every(group => activeSet?.has(group));
+    const activeSet =
+      state.activeGroups.get(network.id);
 
-body.appendChild(
-  createLayerRow(
-    network,
-    '__all__',
-    `Todas (${features.length})`,
-    features.length,
-    allActive
-  )
-);
+    const allActive =
+      groups.length > 0 &&
+      groups.every(group =>
+        activeSet?.has(group)
+      );
 
-groups.forEach(group => {
-  const count = features.filter(
-    feature => feature.__subgroup === group
-  ).length;
+    body.appendChild(
+      createLayerRow(
+        network,
+        '__all__',
+        `Todas (${features.length})`,
+        features.length,
+        allActive
+      )
+    );
 
-  body.appendChild(
-    createLayerRow(
-      network,
-      group,
-      group,
-      count,
-      activeSet?.has(group) || false
-    )
-  );
-});
-}
+    groups.forEach(group => {
+      const count = features.filter(
+        feature =>
+          feature.__subgroup === group
+      ).length;
+
+      body.appendChild(
+        createLayerRow(
+          network,
+          group,
+          group,
+          count,
+          activeSet?.has(group) || false
+        )
+      );
+    });
+  }
 
   return section;
 }
