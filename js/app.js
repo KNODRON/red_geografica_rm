@@ -190,9 +190,31 @@ async function initialize() {
 }
 
 function buildGroupState() {
+  const principalIds = [
+    'autopistas',
+    'transportes',
+    'spd'
+  ];
+
   CONFIG.networks.forEach(network => {
-    const groups = [...new Set(state.features.filter(f => f.__network === network.id).map(f => f.__subgroup))].sort((a,b) => a.localeCompare(b,'es'));
-    state.activeGroups.set(network.id, new Set(groups));
+    const groups = [
+      ...new Set(
+        state.features
+          .filter(feature => feature.__network === network.id)
+          .map(feature => feature.__subgroup)
+      )
+    ].sort((a, b) => a.localeCompare(b, 'es'));
+
+    /*
+     * Solo las redes principales comienzan activadas.
+     * Las redes incluidas en "OTRAS REDES" comienzan ocultas.
+     */
+    state.activeGroups.set(
+      network.id,
+      principalIds.includes(network.id)
+        ? new Set(groups)
+        : new Set()
+    );
   });
 }
 
@@ -210,13 +232,17 @@ function renderNetworkTree() {
     if (network) root.appendChild(createNetworkSection(network, index === 0));
   });
 
-  const otherWrapper = document.createElement('section');
-  otherWrapper.className = 'other-networks open';
+  otherWrapper.className = 'other-networks';
   otherWrapper.innerHTML = `
-    <button class="other-networks-header" type="button" aria-expanded="true">
-      <span class="other-arrow">▼</span>
+    <button
+      class="other-networks-header"
+      type="button"
+      aria-expanded="false"
+    >
+      <span class="other-arrow">►</span>
       <span>OTRAS REDES</span>
     </button>
+
     <div class="other-networks-body"></div>
   `;
 
@@ -262,12 +288,37 @@ function createNetworkSection(network, openByDefault = false) {
   if (!groups.length) {
     body.innerHTML = '<div class="group-empty">Sin datos cargados por el momento.</div>';
   } else {
-    body.appendChild(createLayerRow(network, '__all__', `Todas (${features.length})`, features.length, true));
-    groups.forEach(group => {
-      const count = features.filter(feature => feature.__subgroup === group).length;
-      body.appendChild(createLayerRow(network, group, group, count, true));
-    });
-  }
+    const activeSet = state.activeGroups.get(network.id);
+const allActive =
+  groups.length > 0 &&
+  groups.every(group => activeSet?.has(group));
+
+body.appendChild(
+  createLayerRow(
+    network,
+    '__all__',
+    `Todas (${features.length})`,
+    features.length,
+    allActive
+  )
+);
+
+groups.forEach(group => {
+  const count = features.filter(
+    feature => feature.__subgroup === group
+  ).length;
+
+  body.appendChild(
+    createLayerRow(
+      network,
+      group,
+      group,
+      count,
+      activeSet?.has(group) || false
+    )
+  );
+});
+}
 
   return section;
 }
@@ -774,10 +825,21 @@ function bindUI() {
   });
 }
 
-function resetFilters(){
-  $('searchInput').value='';
-  document.querySelectorAll('.layer-row input').forEach(i=>i.checked=true);
-  buildGroupState(); applyFilters(); clearSelection(); showToast('Filtros restablecidos.');
+function resetFilters() {
+  $('searchInput').value = '';
+
+  /*
+   * Recupera la configuración inicial:
+   * redes principales activas y otras redes desactivadas.
+   */
+  buildGroupState();
+  renderNetworkTree();
+  applyFilters(true);
+  clearSelection();
+
+  showToast(
+    'Filtros restablecidos. Solo se muestran las redes principales.'
+  );
 }
 
 function cycleBaseMap(){
