@@ -41,11 +41,11 @@
       "icono": "helicopter"
     },
     {
-      "id": 'red_asistencial',
-      "label": 'RED ASISTENCIAL',
-      "color": '#E53935',
-      "file": 'data/centros_salud_rm.json',
-      "icon": '+'
+      "id": "red_asistencial",
+      "label": "RED ASISTENCIAL",
+      "color": "#E53935",
+      "file": "data/centros_salud_rm.json",
+      "icon": "+"
     }
   ]
 }
