@@ -298,8 +298,10 @@ function createLayerRow(network, group, label, count, checked) {
   return row;
 }
 
-function applyFilters() {
-  const term = normalizeText($('searchInput').value);
+function applyFilters(ignoreSearchTerm = false) {
+  const term = ignoreSearchTerm
+    ? ''
+    : normalizeText($('searchInput').value);
   state.visible = state.features.filter(feature => {
     if (!state.activeGroups.get(feature.__network)?.has(feature.__subgroup)) return false;
     if (!term) return true;
@@ -433,8 +435,9 @@ function setActiveTool(id) { document.querySelectorAll('.tool-button').forEach(b
 
 async function executeSearch() {
   const query = $('searchInput').value.trim();
+
   if (!query) {
-    applyFilters();
+    applyFilters(true);
     showToast('Escribe una dirección, intersección o punto de interés.');
     return;
   }
@@ -447,102 +450,298 @@ async function executeSearch() {
     const found = await geocodeAddress(query);
 
     if (found) {
+      /*
+       * Recuperamos todos los puntos pertenecientes a las capas activadas.
+       * El texto escrito corresponde a una dirección, no a un filtro de datos.
+       */
+      applyFilters(true);
+
       const latlng = L.latLng(found.lat, found.lon);
-      map.flyTo(latlng, 16, { duration: 0.8 });
+
+      map.flyTo(latlng, 16, {
+        duration: 0.8
+      });
+
       selectNearby(latlng);
+
       state.pointMode = false;
       setActiveTool('');
-      showToast('Ubicación encontrada. Se muestran los puntos dentro de 1 km.');
+
+      showToast(
+        `Ubicación encontrada. Se muestran los puntos dentro de ${CONFIG.nearbyKm} km.`
+      );
+
       return;
     }
 
-    applyFilters();
-    const internalMatches = state.visible.filter(feature => {
-      const value = normalizeText([
-        featureName(feature),
-        feature.__subgroup,
-        featureCommune(feature),
-        feature.properties?.direccion,
-        feature.properties?.tramo
-      ].join(' '));
-      return value.includes(normalizeText(query));
-    });
+    /*
+     * Si los geocodificadores no encuentran una dirección, buscamos dentro
+     * de las capas propias: cámaras, pórticos, hospitales, cuarteles, etc.
+     */
+    const normalizedQuery = normalizeText(query);
+
+    const internalMatches = state.features
+      .filter(feature =>
+        state.activeGroups
+          .get(feature.__network)
+          ?.has(feature.__subgroup)
+      )
+      .filter(feature => {
+        const p = feature.properties || {};
+
+        const searchableText = normalizeText([
+          featureName(feature),
+          feature.__subgroup,
+          featureCommune(feature),
+          p.direccion,
+          p.tramo,
+          p.municipalidad,
+          p.prefectura,
+          p.tipo,
+          p.codigo,
+          p.codigo_oaci,
+          p.codigo_iata
+        ].join(' '));
+
+        return searchableText.includes(normalizedQuery);
+      });
 
     if (internalMatches.length) {
+      applyFilters(true);
+
       const feature = internalMatches[0];
       const latlng = coords(feature);
-      map.flyTo(latlng, 16, { duration: 0.8 });
+
+      map.flyTo(latlng, 16, {
+        duration: 0.8
+      });
+
       selectNearby(latlng);
-      showToast('No se encontró la dirección exacta; se centró el primer punto coincidente.');
+
+      showToast(
+        'Se encontró una coincidencia dentro de las capas de la plataforma.'
+      );
     } else {
-      showToast('No se encontró esa dirección o intersección en la Región Metropolitana.');
+      applyFilters(true);
+
+      showToast(
+        'No se encontró la dirección. Prueba agregando la comuna.'
+      );
     }
   } catch (error) {
-    console.error(error);
-    applyFilters();
-    showToast('No fue posible consultar la dirección. Revisa la conexión a Internet.');
+    console.error('Error durante la búsqueda:', error);
+
+    applyFilters(true);
+
+    showToast(
+      'No fue posible consultar la dirección. Revisa la conexión a Internet.'
+    );
   } finally {
     searchButton.disabled = false;
     searchButton.textContent = '⌕';
   }
 }
 
-function intersectionQueries(query) {
-  const trimmed = query.trim();
-  const context = 'Región Metropolitana, Chile';
-  const variants = [trimmed];
+function splitIntersection(query) {
+  const parts = query
+    .split(/\s+(?:con|y|esquina)\s+|[&/]/i)
+    .map(value => value.trim())
+    .filter(Boolean);
 
-  if (/\s+(con|y)\s+|[&/]/i.test(trimmed)) {
-    const streets = trimmed
-      .split(/\s+(?:con|y)\s+|[&/]/i)
-      .map(value => value.trim())
-      .filter(Boolean);
-
-    if (streets.length >= 2) {
-      variants.push(`${streets[0]} y ${streets[1]}`);
-      variants.push(`${streets[0]}, ${streets[1]}`);
-      variants.push(`${streets[0]} & ${streets[1]}`);
-    }
+  if (parts.length < 2) {
+    return null;
   }
 
-  return [...new Set(variants.map(value => `${value}, ${context}`))];
+  return [parts[0], parts[1]];
+}
+
+function buildGeocodingQueries(query) {
+  const original = query.trim();
+  const intersection = splitIntersection(original);
+
+  const variants = [original];
+
+  if (intersection) {
+    const [streetA, streetB] = intersection;
+
+    variants.push(
+      `${streetA} con ${streetB}`,
+      `${streetA} y ${streetB}`,
+      `${streetA} & ${streetB}`,
+      `${streetA}, ${streetB}`
+    );
+  }
+
+  const contexts = [
+    'Región Metropolitana, Chile',
+    'Santiago, Chile',
+    'Chile'
+  ];
+
+  return [
+    ...new Set(
+      variants.flatMap(value =>
+        contexts.map(context => `${value}, ${context}`)
+      )
+    )
+  ];
+}
+
+function isInsideRM(lat, lon) {
+  /*
+   * Límite rectangular amplio para cubrir toda la Región Metropolitana,
+   * incluyendo Tiltil, San Pedro, Alhué y San José de Maipo.
+   */
+  return (
+    lat >= -34.35 &&
+    lat <= -32.80 &&
+    lon >= -71.80 &&
+    lon <= -69.75
+  );
+}
+
+async function geocodeWithArcGIS(candidate) {
+  const params = new URLSearchParams({
+    SingleLine: candidate,
+    f: 'json',
+    outFields: 'Match_addr,Addr_type,City,Region,Country',
+    outSR: '4326',
+    countryCode: 'CHL',
+    maxLocations: '10',
+
+    /*
+     * Prioriza resultados próximos a Santiago, pero no impide consultar
+     * comunas periféricas de la Región Metropolitana.
+     */
+    location: '-70.6693,-33.4489'
+  });
+
+  const url =
+    'https://geocode.arcgis.com/arcgis/rest/services/' +
+    'World/GeocodeServer/findAddressCandidates?' +
+    params.toString();
+
+  const response = await fetch(url, {
+    headers: {
+      Accept: 'application/json'
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(
+      `ArcGIS Geocoder respondió HTTP ${response.status}`
+    );
+  }
+
+  const data = await response.json();
+
+  const candidates = Array.isArray(data.candidates)
+    ? data.candidates
+    : [];
+
+  const validCandidates = candidates
+    .map(item => ({
+      lat: Number(item.location?.y),
+      lon: Number(item.location?.x),
+      label:
+        item.address ||
+        item.attributes?.Match_addr ||
+        candidate,
+      score: Number(item.score || 0)
+    }))
+    .filter(item =>
+      Number.isFinite(item.lat) &&
+      Number.isFinite(item.lon) &&
+      isInsideRM(item.lat, item.lon)
+    )
+    .sort((a, b) => b.score - a.score);
+
+  return validCandidates[0] || null;
+}
+
+async function geocodeWithNominatim(candidate) {
+  const params = new URLSearchParams({
+    format: 'jsonv2',
+    q: candidate,
+    countrycodes: 'cl',
+    viewbox: '-71.80,-32.80,-69.75,-34.35',
+    bounded: '1',
+    limit: '5',
+    addressdetails: '1',
+    'accept-language': 'es'
+  });
+
+  const response = await fetch(
+    `https://nominatim.openstreetmap.org/search?${params.toString()}`,
+    {
+      headers: {
+        Accept: 'application/json'
+      }
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(
+      `Nominatim respondió HTTP ${response.status}`
+    );
+  }
+
+  const results = await response.json();
+
+  const validResults = results
+    .map(item => ({
+      lat: Number(item.lat),
+      lon: Number(item.lon),
+      label: item.display_name || candidate,
+      importance: Number(item.importance || 0)
+    }))
+    .filter(item =>
+      Number.isFinite(item.lat) &&
+      Number.isFinite(item.lon) &&
+      isInsideRM(item.lat, item.lon)
+    )
+    .sort((a, b) => b.importance - a.importance);
+
+  return validResults[0] || null;
 }
 
 async function geocodeAddress(query) {
-  const viewbox = '-71.75,-32.85,-69.85,-34.35';
+  const candidates = buildGeocodingQueries(query);
 
-  for (const candidate of intersectionQueries(query)) {
-    const params = new URLSearchParams({
-      format: 'jsonv2',
-      q: candidate,
-      countrycodes: 'cl',
-      viewbox,
-      bounded: '1',
-      limit: '1',
-      addressdetails: '1',
-      'accept-language': 'es'
-    });
+  /*
+   * Primer intento: ArcGIS.
+   */
+  for (const candidate of candidates) {
+    try {
+      const result = await geocodeWithArcGIS(candidate);
 
-    const response = await fetch(`https://nominatim.openstreetmap.org/search?${params.toString()}`, {
-      headers: { Accept: 'application/json' }
-    });
+      if (result) {
+        return result;
+      }
+    } catch (error) {
+      console.warn('ArcGIS no respondió:', error);
+    }
+  }
 
-    if (!response.ok) throw new Error(`Geocodificación: HTTP ${response.status}`);
-    const results = await response.json();
-    if (results.length) {
-      return {
-        lat: Number(results[0].lat),
-        lon: Number(results[0].lon),
-        label: results[0].display_name
-      };
+  /*
+   * Segundo intento: OpenStreetMap/Nominatim.
+   */
+  for (const candidate of candidates) {
+    try {
+      const result = await geocodeWithNominatim(candidate);
+
+      if (result) {
+        return result;
+      }
+    } catch (error) {
+      console.warn('Nominatim no respondió:', error);
     }
   }
 
   return null;
 }
 
-function bindUI() {
-  $('searchInput').addEventListener('input', applyFilters);
+function bindUI() {  
   $('searchInput').addEventListener('keydown', event => {
     if (event.key === 'Enter') {
       event.preventDefault();
