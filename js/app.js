@@ -242,11 +242,28 @@ function popupHtml(feature, distance = null) {
     <p><b>Red:</b> ${escapeHtml(n.label)}</p>
     <p><b>Grupo:</b> ${escapeHtml(subgroupOf(feature))}</p>
     <p><b>Comuna:</b> ${escapeHtml(featureCommune(feature))}</p>
-    <p><b>Tramo / referencia:</b> ${escapeHtml(p.tramo || p.direccion || p.region || 'S/I')}</p>
-    <p><b>Tipo:</b> ${escapeHtml(p.tipo_peaje || p.tipo || 'S/I')}</p>
-    ${extraAeronautico}
-    ${extraSalud}
-    ${distance != null ? `<p><b>Distancia:</b> ${distance.toFixed(2)} km</p>` : ''}
+   
+    ${feature.__network === 'autopistas'
+      ? `
+        <p><b>Ubicación / sentido:</b>
+          ${escapeHtml(p.descripcio || p.direccion || 'S/I')}
+        </p>
+
+        <p><b>Tramo general:</b>
+          ${escapeHtml(p.tramo || 'S/I')}
+        </p>
+
+        ${p.sentido
+          ? `<p><b>Sentido:</b> ${escapeHtml(p.sentido)}</p>`
+          : ''
+        }
+      `
+      : `
+        <p><b>Dirección / referencia:</b>
+          ${escapeHtml(p.direccion || p.tramo || p.region || 'S/I')}
+        </p>
+      `
+    }
   </div>`;
 }
 
