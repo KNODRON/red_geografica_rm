@@ -2,2211 +2,3039 @@
   "type": "FeatureCollection",
   "features": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.70378699964955,
-          -33.358012999058055
-        ]
-      },
+      "type": "Feature",
       "id": 1,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6968281,
+          -33.547534
+        ]
+      },
       "properties": {
-        "nom_comuna": "Quilicura",
-        "tramo": "Santiago - Los Vilos",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "Pórtico 1 Lo Marcoleta Ascendente",
-        "cod_comuna": "13125",
-        "contrato": "Ruta 5, Tramo Santiago - Los Vilos",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 1,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 8 (SUR)",
+        "nombre": "PORTICO 8 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.70420100049957,
-          -33.35799699900633
-        ]
-      },
+      "type": "Feature",
       "id": 2,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.710627,
+          -33.5588603
+        ]
+      },
       "properties": {
-        "nom_comuna": "Quilicura",
-        "tramo": "Santiago - Los Vilos",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "Pórtico 2 Lo Marcoleta Descendente",
-        "cod_comuna": "13125",
-        "contrato": "Ruta 5, Tramo Santiago - Los Vilos",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 2,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 32 (SUR)",
+        "nombre": "PORTICO 32 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.71188300046181,
-          -33.33985099916646
-        ]
-      },
+      "type": "Feature",
       "id": 3,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7118941,
+          -33.5680028
+        ]
+      },
       "properties": {
-        "nom_comuna": "Quilicura",
-        "tramo": "Santiago - Los Vilos",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "Pórtico 3 Buenaventura Ascendente",
-        "cod_comuna": "13125",
-        "contrato": "Ruta 5, Tramo Santiago - Los Vilos",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 3,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 6 (SUR)",
+        "nombre": "PORTICO 6 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.7123139999411,
-          -33.339848998913695
-        ]
-      },
+      "type": "Feature",
       "id": 4,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7139968,
+          -33.5823516
+        ]
+      },
       "properties": {
-        "nom_comuna": "Quilicura",
-        "tramo": "Santiago - Los Vilos",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "Pórtico 4 Buenaventura Descendente",
-        "cod_comuna": "13125",
-        "contrato": "Ruta 5, Tramo Santiago - Los Vilos",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 4,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 37 (SUR)",
+        "nombre": "PORTICO 37 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.72213500026619,
-          -33.317124998880196
-        ]
-      },
+      "type": "Feature",
       "id": 5,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7148898,
+          -33.6219622
+        ]
+      },
       "properties": {
-        "nom_comuna": "Colina",
-        "tramo": "Santiago - Los Vilos",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "Pórtico 5 La Montaña Ascendente",
-        "cod_comuna": "13301",
-        "contrato": "Ruta 5, Tramo Santiago - Los Vilos",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "133",
         "objectid": 5,
-        "nom_provincia": "Chacabuco"
+        "descripcio": "PORTICO 4 (SUR)",
+        "nombre": "PORTICO 4 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.72246100012042,
-          -33.31709699929964
-        ]
-      },
+      "type": "Feature",
       "id": 6,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7145727,
+          -33.6226669
+        ]
+      },
       "properties": {
-        "nom_comuna": "Lampa",
-        "tramo": "Santiago - Los Vilos",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "Pórtico 6 La Montaña Descendente",
-        "cod_comuna": "13302",
-        "contrato": "Ruta 5, Tramo Santiago - Los Vilos",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "133",
         "objectid": 6,
-        "nom_provincia": "Chacabuco"
+        "descripcio": "PORTICO 3 (NORTE)",
+        "nombre": "PORTICO 3 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.73881700010455,
-          -33.27996699871358
-        ]
-      },
+      "type": "Feature",
       "id": 7,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7117407,
+          -33.5681721
+        ]
+      },
       "properties": {
-        "nom_comuna": "Colina",
-        "tramo": "Santiago - Los Vilos",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "Pórtico 7 Lo Pinto Ascendente",
-        "cod_comuna": "13301",
-        "contrato": "Ruta 5, Tramo Santiago - Los Vilos",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "133",
         "objectid": 7,
-        "nom_provincia": "Chacabuco"
+        "descripcio": "PORTICO 5 (NORTE)",
+        "nombre": "PORTICO 5 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.73918200001678,
-          -33.27994499900337
-        ]
-      },
+      "type": "Feature",
       "id": 8,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6969278,
+          -33.5478723
+        ]
+      },
       "properties": {
-        "nom_comuna": "Lampa",
-        "tramo": "Santiago - Los Vilos",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "Pórtico 8 Lo Pinto Descendente",
-        "cod_comuna": "13302",
-        "contrato": "Ruta 5, Tramo Santiago - Los Vilos",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "133",
         "objectid": 8,
-        "nom_provincia": "Chacabuco"
+        "descripcio": "PORTICO 7 (NORTE)",
+        "nombre": "PORTICO 7 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.75877499947445,
-          -33.2356119993054
-        ]
-      },
+      "type": "Feature",
       "id": 9,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6692743,
+          -33.5072511
+        ]
+      },
       "properties": {
-        "nom_comuna": "Colina",
-        "tramo": "Santiago - Los Vilos",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "Pórtico 9 Lampa Ascendente",
-        "cod_comuna": "13301",
-        "contrato": "Ruta 5, Tramo Santiago - Los Vilos",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "133",
         "objectid": 9,
-        "nom_provincia": "Chacabuco"
+        "descripcio": "PORTICO 30 (NORTE)",
+        "nombre": "PORTICO 30 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.75914399965025,
-          -33.23559799884802
-        ]
-      },
+      "type": "Feature",
       "id": 10,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6562032,
+          -33.468988
+        ]
+      },
       "properties": {
-        "nom_comuna": "Lampa",
-        "tramo": "Santiago - Los Vilos",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "Pórtico 10 Lampa Descendente",
-        "cod_comuna": "13302",
-        "contrato": "Ruta 5, Tramo Santiago - Los Vilos",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "133",
         "objectid": 10,
-        "nom_provincia": "Chacabuco"
+        "descripcio": "PORTICO 31 (NORTE)",
+        "nombre": "PORTICO 31 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.72576900051418,
-          -33.6861049987357
-        ]
-      },
+      "type": "Feature",
       "id": 11,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6595834,
+          -33.4489275
+        ]
+      },
       "properties": {
-        "nom_comuna": "San Bernardo",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 1 La Capilla - Rio Maipo",
-        "cod_comuna": "13401",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "134",
         "objectid": 11,
-        "nom_provincia": "Maipo"
+        "descripcio": "PORTICO 13 (NORTE)",
+        "nombre": "PORTICO 13 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.71159000028231,
-          -33.6473519990361
-        ]
-      },
+      "type": "Feature",
       "id": 12,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6787225,
+          -33.4171846
+        ]
+      },
       "properties": {
-        "nom_comuna": "San Bernardo",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 2 Rio Maipo - La Capilla",
-        "cod_comuna": "13401",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "134",
         "objectid": 12,
-        "nom_provincia": "Maipo"
+        "descripcio": "PORTICO 16 (NORTE)",
+        "nombre": "PORTICO 16 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.71466100042947,
-          -33.622679999047044
-        ]
-      },
+      "type": "Feature",
       "id": 13,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6991031,
+          -33.3685696
+        ]
+      },
       "properties": {
-        "nom_comuna": "San Bernardo",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 3 La Capilla - Colon",
-        "cod_comuna": "13401",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "134",
         "objectid": 13,
-        "nom_provincia": "Maipo"
+        "descripcio": "PORTICO 17 (NORTE)",
+        "nombre": "PORTICO 17 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.7146199997224,
-          -33.62385199882999
-        ]
-      },
+      "type": "Feature",
       "id": 14,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.699444,
+          -33.3682901
+        ]
+      },
       "properties": {
-        "nom_comuna": "San Bernardo",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 4 Calera de Tango",
-        "cod_comuna": "13401",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "134",
         "objectid": 14,
-        "nom_provincia": "Maipo"
+        "descripcio": "PORTICO 18 (SUR)",
+        "nombre": "PORTICO 18 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.71384099964621,
-          -33.582450999118855
-        ]
-      },
+      "type": "Feature",
       "id": 15,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6688866,
+          -33.426561
+        ]
+      },
       "properties": {
-        "nom_comuna": "San Bernardo",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 5 Colon - Las Acacias",
-        "cod_comuna": "13401",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "134",
         "objectid": 15,
-        "nom_provincia": "Maipo"
+        "descripcio": "PORTICO 15 (SUR)",
+        "nombre": "PORTICO 15 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.71384099964621,
-          -33.582450999118855
-        ]
-      },
+      "type": "Feature",
       "id": 16,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6600589,
+          -33.4483978
+        ]
+      },
       "properties": {
-        "nom_comuna": "San Bernardo",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 6 Las Acacias - Colon",
-        "cod_comuna": "13401",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "134",
         "objectid": 16,
-        "nom_provincia": "Maipo"
+        "descripcio": "PORTICO 14 (SUR)",
+        "nombre": "PORTICO 14 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.69751499996974,
-          -33.54793299882257
-        ]
-      },
+      "type": "Feature",
       "id": 17,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6638797,
+          -33.4953181
+        ]
+      },
       "properties": {
-        "nom_comuna": "San Bernardo",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 7 Las Acacias - Americo Vespucio",
-        "cod_comuna": "13401",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "134",
         "objectid": 17,
-        "nom_provincia": "Maipo"
+        "descripcio": "PORTICO 11 (SUR)",
+        "nombre": "PORTICO 11 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.69751499996974,
-          -33.54793299882257
-        ]
-      },
+      "type": "Feature",
       "id": 18,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.674008,
+          -33.5166538
+        ]
+      },
       "properties": {
-        "nom_comuna": "San Bernardo",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 8 Americo Vespucio - Las Acacias",
-        "cod_comuna": "13401",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "134",
         "objectid": 18,
-        "nom_provincia": "Maipo"
+        "descripcio": "PORTICO 9 (SUR)",
+        "nombre": "PORTICO 9 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.66950699994949,
-          -33.5071639991675
-        ]
-      },
+      "type": "Feature",
       "id": 19,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.656569,
+          -33.4688294
+        ]
+      },
       "properties": {
-        "nom_comuna": "Pedro Aguirre Cerda",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 9 Departamental - Americo Vespucio",
-        "cod_comuna": "13121",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 19,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 12 (SUR)",
+        "nombre": "PORTICO 12 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.66388099978242,
-          -33.49558299918948
-        ]
-      },
+      "type": "Feature",
       "id": 20,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7250293,
+          -33.6778785
+        ]
+      },
       "properties": {
-        "nom_comuna": "Pedro Aguirre Cerda",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 10 Americo Vespucio - Carlos Valdovino",
-        "cod_comuna": "13121",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 20,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 1 (SUR)",
+        "nombre": "PORTICO 1 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.66392100002392,
-          -33.49547799916497
-        ]
-      },
+      "type": "Feature",
       "id": 21,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6955587,
+          -33.3822059
+        ]
+      },
       "properties": {
-        "nom_comuna": "Pedro Aguirre Cerda",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 11 Carlos Valdovinos - Departamental",
-        "cod_comuna": "13121",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 21,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 28 (NORTE)",
+        "nombre": "PORTICO 28 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.65692199995611,
-          -33.468905999424585
-        ]
-      },
+      "type": "Feature",
       "id": 22,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6954862,
+          -33.3818689
+        ]
+      },
       "properties": {
-        "nom_comuna": "Santiago",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 12 Alameda - Carlos Valdovino",
-        "cod_comuna": "13101",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 22,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 29 (SUR)",
+        "nombre": "PORTICO 29 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.65973199992703,
-          -33.44871499883313
-        ]
-      },
+      "type": "Feature",
       "id": 23,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6920548,
+          -33.4465887
+        ]
+      },
       "properties": {
-        "nom_comuna": "Santiago",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 13 Carlos Valdovino - Rio Mapocho",
-        "cod_comuna": "13101",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 23,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 25 (NORTE)",
+        "nombre": "PORTICO 25 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.65973199992703,
-          -33.44871499883313
-        ]
-      },
+      "type": "Feature",
       "id": 24,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.692289,
+          -33.4474164
+        ]
+      },
       "properties": {
-        "nom_comuna": "Santiago",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 14 Rio Mapocho - Alameda",
-        "cod_comuna": "13101",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 24,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 26 (SUR)",
+        "nombre": "PORTICO 26 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.66874000011866,
-          -33.42635699929677
-        ]
-      },
+      "type": "Feature",
       "id": 25,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6880958,
+          -33.4690398
+        ]
+      },
       "properties": {
-        "nom_comuna": "Independencia",
-        "tramo": "Longitudinal Norte Avda Bernardo Ohiggins",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 15 14 de la Fama - Rio Mapocho",
-        "cod_comuna": "13108",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 25,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 23 (NORTE)",
+        "nombre": "PORTICO 23 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.6790419995621,
-          -33.416960999182976
-        ]
-      },
+      "type": "Feature",
       "id": 26,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6882314,
+          -33.4698066
+        ]
+      },
       "properties": {
-        "nom_comuna": "Renca",
-        "tramo": "Longitudinal Norte Avda Bernardo Ohiggins",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 16 Rio Mapocho - 14 de la Fama",
-        "cod_comuna": "13128",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 26,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 24 (SUR)",
+        "nombre": "PORTICO 24 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.69919000015632,
-          -33.36853399912768
-        ]
-      },
+      "type": "Feature",
       "id": 27,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6972245,
+          -33.5063799
+        ]
+      },
       "properties": {
-        "nom_comuna": "Conchalí",
-        "tramo": "Longitudinal Norte Avda Bernardo Ohiggins",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 17 14 de la Fama - Americo Vespucio Norte",
-        "cod_comuna": "13104",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 27,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 21 (NORTE)",
+        "nombre": "PORTICO 21 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.69919000015632,
-          -33.36853399912768
-        ]
-      },
+      "type": "Feature",
       "id": 28,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6970071,
+          -33.505581
+        ]
+      },
       "properties": {
-        "nom_comuna": "Conchalí",
-        "tramo": "Longitudinal Norte Avda Bernardo Ohiggins",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 18 Americo Vespucio Norte - 14 de la Fama",
-        "cod_comuna": "13104",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 28,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 22 (SUR)",
+        "nombre": "PORTICO 22 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.7092530004835,
-          -33.55147799930997
-        ]
-      },
+      "type": "Feature",
       "id": 29,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7076586,
+          -33.5364597
+        ]
+      },
       "properties": {
-        "nom_comuna": "San Bernardo",
-        "tramo": "Eje General Velasquez Sur",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 19 Ruta 5 Sur - Americo Vespucio",
-        "cod_comuna": "13401",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "134",
         "objectid": 29,
-        "nom_provincia": "Maipo"
+        "descripcio": "PORTICO 20 (SUR)",
+        "nombre": "PORTICO 20 (SUR)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.7072179996049,
-          -33.53685799938236
-        ]
-      },
+      "type": "Feature",
       "id": 30,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7115832,
+          -33.6473051
+        ]
+      },
       "properties": {
-        "nom_comuna": "San Bernardo",
-        "tramo": "Eje General Velasquez Sur",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 20 Americo Vespucio - Ruta 5 Sur",
-        "cod_comuna": "13401",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "134",
         "objectid": 30,
-        "nom_provincia": "Maipo"
+        "descripcio": "PORTICO 2 (NORTE)",
+        "nombre": "PORTICO 2 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.69739899956582,
-          -33.50607999916702
-        ]
-      },
+      "type": "Feature",
       "id": 31,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7090476,
+          -33.5513815
+        ]
+      },
       "properties": {
-        "nom_comuna": "Cerrillos",
-        "tramo": "Eje General Velasquez Sur",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 21 Americo Vespucio - Carlos Valdovinos",
-        "cod_comuna": "13102",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 31,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 19 (NORTE)",
+        "nombre": "PORTICO 19 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.69739899956582,
-          -33.50607999916702
-        ]
-      },
+      "type": "Feature",
       "id": 32,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6638353,
+          -33.495617
+        ]
+      },
       "properties": {
-        "nom_comuna": "Cerrillos",
-        "tramo": "Eje General Velasquez Sur",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 22 Carlos Valdovinos - Americo Vespucio",
-        "cod_comuna": "13102",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 32,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 10 (NORTE)",
+        "nombre": "PORTICO 10 (NORTE)",
+        "contrato": "Sistema Norte-Sur",
+        "autopista": "Autopista Central",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.68843499997583,
-          -33.46930899930332
-        ]
-      },
+      "type": "Feature",
       "id": 33,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7909352,
+          -33.4180975
+        ]
+      },
       "properties": {
-        "nom_comuna": "Estación Central",
-        "tramo": "Eje General Velasquez Sur",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 23 Carlos Valdovinos - Alameda",
-        "cod_comuna": "13106",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 33,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 9 (ORIENTE)",
+        "nombre": "PORTICO 9 (ORIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.68843499997583,
-          -33.46930899930332
-        ]
-      },
+      "type": "Feature",
       "id": 34,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7908172,
+          -33.4178468
+        ]
+      },
       "properties": {
-        "nom_comuna": "Estación Central",
-        "tramo": "Eje General Velasquez Sur",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 24 Alemana - Carlos Valdovino",
-        "cod_comuna": "13106",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 34,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 9 (PONIENTE)",
+        "nombre": "PORTICO 9 (PONIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.69212900023999,
-          -33.44704399885799
-        ]
-      },
+      "type": "Feature",
       "id": 35,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7666584,
+          -33.4130888
+        ]
+      },
       "properties": {
-        "nom_comuna": "Quinta Normal",
-        "tramo": "Eje General Velasquez Norte",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 25 Alameda - Rio Mapocho",
-        "cod_comuna": "13126",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 35,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 6.2 (ORIENTE)",
+        "nombre": "PORTICO 6.2 (ORIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.69236799986875,
-          -33.44716699886967
-        ]
-      },
+      "type": "Feature",
       "id": 36,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7663647,
+          -33.4129511
+        ]
+      },
       "properties": {
-        "nom_comuna": "Quinta Normal",
-        "tramo": "Eje General Velasquez Norte",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 26 Rio Mapocho - Alameda",
-        "cod_comuna": "13126",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 36,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 6.2 (PONIENTE)",
+        "nombre": "PORTICO 6.2 (PONIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.69572900002095,
-          -33.38206899870255
-        ]
-      },
+      "type": "Feature",
       "id": 37,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7395378,
+          -33.4118201
+        ]
+      },
       "properties": {
-        "nom_comuna": "Quilicura",
-        "tramo": "Eje General Velasquez Norte",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 28 Rio - Ruta 5 Norte",
-        "cod_comuna": "13125",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 37,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 6.1 (ORIENTE)",
+        "nombre": "PORTICO 6.1 (ORIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.69611299976278,
-          -33.38230499956347
-        ]
-      },
+      "type": "Feature",
       "id": 38,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7395445,
+          -33.411669
+        ]
+      },
       "properties": {
-        "nom_comuna": "Renca",
-        "tramo": "Eje General Velasquez Norte",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 29 Ruta 5 Norte - Rio Mapocho",
-        "cod_comuna": "13128",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 38,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 6.1 (PONIENTE)",
+        "nombre": "PORTICO 6.1 (PONIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.54265999954026,
-          -33.375849998851265
-        ]
-      },
+      "type": "Feature",
       "id": 39,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6701851,
+          -33.4264177
+        ]
+      },
       "properties": {
-        "nom_comuna": "Vitacura",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P1 Puente San Francisco – Gran Vía",
-        "cod_comuna": "13132",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 39,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 5 (ORIENTE)",
+        "nombre": "PORTICO 5 (ORIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.60376199996632,
-          -33.39473699896654
-        ]
-      },
+      "type": "Feature",
       "id": 40,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6698424,
+          -33.4263869
+        ]
+      },
       "properties": {
-        "nom_comuna": "Vitacura",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P2.2  Centenario - Puente Lo Saldes",
-        "cod_comuna": "13132",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 40,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 5 (PONIENTE)",
+        "nombre": "PORTICO 5 (PONIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.62183799983005,
-          -33.42412199900896
-        ]
-      },
+      "type": "Feature",
       "id": 41,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6579962,
+          -33.4302429
+        ]
+      },
       "properties": {
-        "nom_comuna": "Providencia",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P3 Puente Lo Saldes - Vivaceta",
-        "cod_comuna": "13123",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 41,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 4 (ORIENTE)",
+        "nombre": "PORTICO 4 (ORIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.66986699953515,
-          -33.42643299908676
-        ]
-      },
+      "type": "Feature",
       "id": 42,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6572349,
+          -33.430254
+        ]
+      },
       "properties": {
-        "nom_comuna": "Independencia",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P5 Vivaceta -  Carrascal",
-        "cod_comuna": "13108",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 42,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO EV (ENTRADA VIVACETA)",
+        "nombre": "PORTICO EV (ENTRADA VIVACETA)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.76643000050632,
-          -33.41294999943692
-        ]
-      },
+      "type": "Feature",
       "id": 43,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6394911,
+          -33.4346384
+        ]
+      },
       "properties": {
-        "nom_comuna": "Renca",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P6 Carrascal - Americo Vespucio Poniente (SACADO)",
-        "cod_comuna": "13128",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 43,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO EP (ENTRADA PURISIMA)",
+        "nombre": "PORTICO EP (ENTRADA PURISIMA)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.79093999950477,
-          -33.417789998769415
-        ]
-      },
+      "type": "Feature",
       "id": 44,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6218399,
+          -33.4241104
+        ]
+      },
       "properties": {
-        "nom_comuna": "Pudahuel",
-        "tramo": "Extension Ruta 68",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P9 Americo Vespucio Poniente - Ruta 68",
-        "cod_comuna": "13124",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 44,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 3 (ORIENTE)",
+        "nombre": "PORTICO 3 (ORIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.54293500035352,
-          -33.38767099926879
-        ]
-      },
+      "type": "Feature",
       "id": 45,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6219418,
+          -33.4239772
+        ]
+      },
       "properties": {
-        "nom_comuna": "Vitacura",
-        "tramo": "Eje Kennedy (Km 0.000 - 7.800)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P7 Estoril - Las Tranqueras",
-        "cod_comuna": "13132",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 45,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 3 (PONIENTE)",
+        "nombre": "PORTICO 3 (PONIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.60057700033197,
-          -33.40804399919937
-        ]
-      },
+      "type": "Feature",
       "id": 46,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5925722,
+          -33.3846784
+        ]
+      },
       "properties": {
-        "nom_comuna": "Vitacura",
-        "tramo": "Eje Kennedy (Km 0.000 - 7.800)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P8 PR Las Tranqueras - Costanera Norte(SACADO)",
-        "cod_comuna": "13132",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 46,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 2.1 (ORIENTE)",
+        "nombre": "PORTICO 2.1 (ORIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.79096000001176,
-          -33.418119998696355
-        ]
-      },
+      "type": "Feature",
       "id": 47,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5926869,
+          -33.3845743
+        ]
+      },
       "properties": {
-        "nom_comuna": "Pudahuel",
-        "tramo": "Extension Ruta 68",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P9 Ruta 68 - Americo Vespucio Poniente",
-        "cod_comuna": "13124",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 47,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 2.1 (PONIENTE)",
+        "nombre": "PORTICO 2.1 (PONIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.60084199977324,
-          -33.4081529991479
-        ]
-      },
+      "type": "Feature",
       "id": 48,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5426265,
+          -33.3757679
+        ]
+      },
       "properties": {
-        "nom_comuna": "Las Condes",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P8 Puente Los Saldes - R. Perez Zujovich (SACADO)",
-        "cod_comuna": "13114",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 48,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 1 (PONIENTE)",
+        "nombre": "PORTICO 1 (PONIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.54139399949888,
-          -33.38722099926219
-        ]
-      },
+      "type": "Feature",
       "id": 49,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5430764,
+          -33.3757158
+        ]
+      },
       "properties": {
-        "nom_comuna": "Las Condes",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P7 Las Tranqueras - Estoril",
-        "cod_comuna": "13114",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 49,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 1 (ORIENTE)",
+        "nombre": "PORTICO 1 (ORIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.76665999972968,
-          -33.41319999892819
-        ]
-      },
+      "type": "Feature",
       "id": 50,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5429183,
+          -33.3876583
+        ]
+      },
       "properties": {
-        "nom_comuna": "Renca",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P6 Americo Vespucio Poniente - Carrascal (SACADO)",
-        "cod_comuna": "13128",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 50,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 7 (PONIENTE)",
+        "nombre": "PORTICO 7 (PONIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.67025000044359,
-          -33.42649999955849
-        ]
-      },
+      "type": "Feature",
       "id": 51,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5413759,
+          -33.3872072
+        ]
+      },
       "properties": {
-        "nom_comuna": "Santiago",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P5 Carrascal - Vivaceta",
-        "cod_comuna": "13101",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 51,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 7 (ORIENTE)",
+        "nombre": "PORTICO 7 (ORIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.65793000031702,
-          -33.43021099916783
-        ]
-      },
+      "type": "Feature",
       "id": 52,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5225614,
+          -33.3709675
+        ]
+      },
       "properties": {
-        "nom_comuna": "Independencia",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P4 Vivaceta - Torres Tajamar",
-        "cod_comuna": "13108",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 52,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 0 (PONIENTE)",
+        "nombre": "PORTICO 0 (PONIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.62182699949652,
-          -33.424127999374974
-        ]
-      },
+      "type": "Feature",
       "id": 53,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5229033,
+          -33.3712241
+        ]
+      },
       "properties": {
-        "nom_comuna": "Providencia",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P3 Torres Tajamar - Puente Lo Saldes",
-        "cod_comuna": "13123",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 53,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 0 (ORIENTE)",
+        "nombre": "PORTICO 0 (ORIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.60361000038228,
-          -33.39504999936275
-        ]
-      },
+      "type": "Feature",
       "id": 54,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6197935,
+          -33.4221378
+        ]
+      },
       "properties": {
-        "nom_comuna": "Vitacura",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P2.2  Puente Lo Saldes - Centenario",
-        "cod_comuna": "13132",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 54,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO SB (SALIDA BELLAVISTA)",
+        "nombre": "PORTICO SB (SALIDA BELLAVISTA)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "SALIDA BELLAVISTA",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "ORIENTE - PONIENTE | SALIDA BELLAVISTA",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.60361000038228,
-          -33.39504999936275
-        ]
-      },
+      "type": "Feature",
       "id": 55,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6043268,
+          -33.4090835
+        ]
+      },
       "properties": {
-        "nom_comuna": "Vitacura",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P1 Gran Vía – Puente San Francisco",
-        "cod_comuna": "13132",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 55,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 8.0 (ORIENTE)",
+        "nombre": "PORTICO 8.0 (ORIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "COSTANERA NORTE - LAS TRANQUERAS",
+        "descripcion_original": "COSTANERA NORTE - LAS TRANQUERAS",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.63296499967544,
-          -33.38865199957903
-        ]
-      },
+      "type": "Feature",
       "id": 56,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6038665,
+          -33.409041
+        ]
+      },
       "properties": {
-        "nom_comuna": "Recoleta",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P15 El Salto - Recoleta",
-        "cod_comuna": "13127",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 56,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 8.1 (ORIENTE)",
+        "nombre": "PORTICO 8.1 (ORIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "COSTANERA NORTE - LAS TRANQUERAS",
+        "descripcion_original": "COSTANERA NORTE - LAS TRANQUERAS",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.66464799954669,
-          -33.37338399954156
-        ]
-      },
+      "type": "Feature",
       "id": 57,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6019238,
+          -33.4084758
+        ]
+      },
       "properties": {
-        "nom_comuna": "Conchalí",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P13 Recoleta - Pedro Fontova",
-        "cod_comuna": "13104",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 57,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 8.2 (ORIENTE)",
+        "nombre": "PORTICO 8.2 (ORIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "COSTANERA NORTE - LAS TRANQUERAS",
+        "descripcion_original": "COSTANERA NORTE - LAS TRANQUERAS",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.6951000003696,
-          -33.36577599931428
-        ]
-      },
+      "type": "Feature",
       "id": 58,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6022212,
+          -33.4099875
+        ]
+      },
       "properties": {
-        "nom_comuna": "Quilicura",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P11 Pedro Fontova - Ruta 5 Norte",
-        "cod_comuna": "13125",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 58,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 8.3 (ORIENTE)",
+        "nombre": "PORTICO 8.3 (ORIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "COSTANERA NORTE - LAS TRANQUERAS",
+        "descripcion_original": "COSTANERA NORTE - LAS TRANQUERAS",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.711268999956,
-          -33.373002999059324
-        ]
-      },
+      "type": "Feature",
       "id": 59,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5997139,
+          -33.4081092
+        ]
+      },
       "properties": {
-        "nom_comuna": "Quilicura",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P8 Ruta 5 Norte - Condell",
-        "cod_comuna": "13125",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 59,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 8.0 (PONIENTE)",
+        "nombre": "PORTICO 8.0 (PONIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "LAS TRANQUERAS - COSTANERA NORTE",
+        "descripcion_original": "LAS TRANQUERAS - COSTANERA NORTE",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.77554600017814,
-          -33.399313998755105
-        ]
-      },
+      "type": "Feature",
       "id": 60,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5997172,
+          -33.4080101
+        ]
+      },
       "properties": {
-        "nom_comuna": "Pudahuel",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P6 Condell - Costanera Norte",
-        "cod_comuna": "13124",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 60,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 8.1 (PONIENTE)",
+        "nombre": "PORTICO 8.1 (PONIENTE)",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "LAS TRANQUERAS - COSTANERA NORTE",
+        "descripcion_original": "LAS TRANQUERAS - COSTANERA NORTE",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.7847989996159,
-          -33.431162999152946
-        ]
-      },
+      "type": "Feature",
       "id": 61,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6036741,
+          -33.3948251
+        ]
+      },
       "properties": {
-        "nom_comuna": "Pudahuel",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P4 Costanera Norte - Ruta 68",
-        "cod_comuna": "13124",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 61,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 2.2",
+        "nombre": "PORTICO 2.2",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.76713699969548,
-          -33.45635099943578
-        ]
-      },
+      "type": "Feature",
       "id": 62,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7232078,
+          -33.4108516
+        ]
+      },
       "properties": {
-        "nom_comuna": "Pudahuel",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P2 Ruta 68 - Los Mares",
-        "cod_comuna": "13124",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 62,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 27",
+        "nombre": "PORTICO 27",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.7531199999355,
-          -33.483400998978176
-        ]
-      },
+      "type": "Feature",
       "id": 63,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7461999,
+          -33.4113496
+        ]
+      },
       "properties": {
-        "nom_comuna": "Maipú",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P1 Ruta 78 - Santa Elena",
-        "cod_comuna": "13119",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 63,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 28",
+        "nombre": "PORTICO 28",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.78312300036262,
-          -33.438681998925844
-        ]
-      },
+      "type": "Feature",
       "id": 64,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7467149,
+          -33.412084
+        ]
+      },
       "properties": {
-        "nom_comuna": "Pudahuel",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P3 Ruta 68 - Costanera Norte",
-        "cod_comuna": "13124",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 64,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 2",
+        "nombre": "PORTICO 2",
+        "contrato": "Costanera Norte",
+        "autopista": "Costanera Norte",
+        "tramo": "",
+        "sentido": "",
+        "descripcion_original": "",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.77559700028814,
-          -33.39957999920292
-        ]
-      },
+      "type": "Feature",
       "id": 65,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.728514,
+          -33.5058233
+        ]
+      },
       "properties": {
-        "nom_comuna": "Renca",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P5 Costanera Norte - Condell",
-        "cod_comuna": "13128",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 65,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 1.3",
+        "nombre": "PORTICO 1.3",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P1.3 2a Transversal - Camino a Melipilla (Longitud 5,30 Kms)",
+        "sentido": "poniente-oriente",
+        "descripcion_original": "P1.3 2a Transversal - Camino a Melipilla (Longitud 5,30 Kms) | Sentido poniente-oriente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.75396199991013,
-          -33.381312998821436
-        ]
-      },
+      "type": "Feature",
       "id": 66,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.712486,
+          -33.516565
+        ]
+      },
       "properties": {
-        "nom_comuna": "Quilicura",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P7 Condell - Lo Echevers",
-        "cod_comuna": "13125",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 66,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 1.1",
+        "nombre": "PORTICO 1.1",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P1.1 General Velásquez - Ruta 78 (Longitud 5,30 Kms)",
+        "sentido": "oriente-poniente",
+        "descripcion_original": "P1.1 General Velásquez - Ruta 78 (Longitud 5,30 Kms) | Sentido oriente-poniente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.70430000022137,
-          -33.368837999330744
-        ]
-      },
+      "type": "Feature",
       "id": 67,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6941694,
+          -33.5262286
+        ]
+      },
       "properties": {
-        "nom_comuna": "Quilicura",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P9 Lo Echevers - Ruta 5 Norte",
-        "cod_comuna": "13125",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 67,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 2.2",
+        "nombre": "PORTICO 2.2",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P2.2 Gral. Velásquez - Ruta 5 (Longitud 2,50 Kms)",
+        "sentido": "poniente-oriente",
+        "descripcion_original": "P2.2 Gral. Velásquez - Ruta 5 (Longitud 2,50 Kms) | Sentido poniente-oriente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.69689399956896,
-          -33.366002999401786
-        ]
-      },
+      "type": "Feature",
       "id": 68,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6939669,
+          -33.5260307
+        ]
+      },
       "properties": {
-        "nom_comuna": "Conchalí",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P10 Ruta 5 Norte - Pedro Fontova",
-        "cod_comuna": "13104",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 68,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 2.1",
+        "nombre": "PORTICO 2.1",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P2.1 Gral. Velásquez - Ruta 5",
+        "sentido": "oriente-poniente",
+        "descripcion_original": "P2.1 Gral. Velásquez - Ruta 5 | Sentido oriente-poniente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.66496599986387,
-          -33.37340699878719
-        ]
-      },
+      "type": "Feature",
       "id": 69,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6763049,
+          -33.5335823
+        ]
+      },
       "properties": {
-        "nom_comuna": "Conchalí",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P12 Pedro Fontova - Guanaco",
-        "cod_comuna": "13104",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 69,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 3.3",
+        "nombre": "PORTICO 3.3",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P3. Ruta 5 - Gran Avenida",
+        "sentido": "oriente-poniente",
+        "descripcion_original": "P3. Ruta 5 - Gran Avenida | Sentido oriente-poniente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.63333300047869,
-          -33.38859999883176
-        ]
-      },
+      "type": "Feature",
       "id": 70,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6765125,
+          -33.5337734
+        ]
+      },
       "properties": {
-        "nom_comuna": "Recoleta",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P14 Guanaco - El Salto",
-        "cod_comuna": "13127",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 70,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 3.4",
+        "nombre": "PORTICO 3.4",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P3.4 Ruta 5 - Gran Avenida (Longitud 1,20 Kms)",
+        "sentido": "poniente-oriente",
+        "descripcion_original": "P3.4 Ruta 5 - Gran Avenida (Longitud 1,20 Kms) | Sentido poniente-oriente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.72842000038153,
-          -33.50588599946594
-        ]
-      },
+      "type": "Feature",
       "id": 71,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6529231,
+          -33.5395967
+        ]
+      },
       "properties": {
-        "nom_comuna": "Cerrillos",
-        "tramo": "Américo Vespucio Sur Sur Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "1.3 2a Transversal - Camino a Melipilla",
-        "cod_comuna": "13102",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 71,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 3.1",
+        "nombre": "PORTICO 3.1",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P3.1 Santa Rosa - Gran Avenida (Longitud 3,31 Kms)",
+        "sentido": "oriente-poniente",
+        "descripcion_original": "P3.1 Santa Rosa - Gran Avenida (Longitud 3,31 Kms) | Sentido oriente-poniente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.6940740001191,
-          -33.52627299894858
-        ]
-      },
+      "type": "Feature",
       "id": 72,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6531008,
+          -33.5398018
+        ]
+      },
       "properties": {
-        "nom_comuna": "Lo Espejo",
-        "tramo": "Américo Vespucio Sur Sur Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "2.2 Gral. Velásquez - Ruta 5",
-        "cod_comuna": "13116",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 72,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 3.2",
+        "nombre": "PORTICO 3.2",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P3.1 Santa Rosa - Gran Avenida",
+        "sentido": "poniente-oriente",
+        "descripcion_original": "P3.1 Santa Rosa - Gran Avenida | Sentido poniente-oriente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.67640599965111,
-          -33.53355799898478
-        ]
-      },
+      "type": "Feature",
       "id": 73,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6151078,
+          -33.5411528
+        ]
+      },
       "properties": {
-        "nom_comuna": "La Cisterna",
-        "tramo": "Américo Vespucio Sur Sur Oriente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "3.4 Ruta 5 - Gran Avenida",
-        "cod_comuna": "13109",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 73,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 4.3",
+        "nombre": "PORTICO 4.3",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P4.3 Coronel - Santa Julia (Longitud 0,45 Kms)",
+        "sentido": "poniente-oriente",
+        "descripcion_original": "P4.3 Coronel - Santa Julia (Longitud 0,45 Kms) | Sentido poniente-oriente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.65301099988515,
-          -33.5395809994934
-        ]
-      },
+      "type": "Feature",
       "id": 74,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6047989,
+          -33.5297462
+        ]
+      },
       "properties": {
-        "nom_comuna": "La Cisterna",
-        "tramo": "Américo Vespucio Sur Sur Oriente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "3.2 Gran Avenida - Santa Rosa",
-        "cod_comuna": "13109",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 74,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 4.1",
+        "nombre": "PORTICO 4.1",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P4.1 Gnmo. de Alderete - Santa Julia (Longitud 3,10 Kms)",
+        "sentido": "oriente-poniente",
+        "descripcion_original": "P4.1 Gnmo. de Alderete - Santa Julia (Longitud 3,10 Kms) | Sentido oriente-poniente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.61500900047713,
-          -33.54115199949459
-        ]
-      },
+      "type": "Feature",
       "id": 75,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6026196,
+          -33.5268922
+        ]
+      },
       "properties": {
-        "nom_comuna": "La Granja",
-        "tramo": "Américo Vespucio Sur Sur Oriente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "4.3 Coronel - Santa Julia",
-        "cod_comuna": "13111",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 75,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 4.2",
+        "nombre": "PORTICO 4.2",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P4.2 Gnmo. de Alderete - Vicuña Mackena (Longitud 2,65 Kms)",
+        "sentido": "poniente-oriente",
+        "descripcion_original": "P4.2 Gnmo. de Alderete - Vicuña Mackena (Longitud 2,65 Kms) | Sentido poniente-oriente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.60256800043294,
-          -33.52677599922955
-        ]
-      },
+      "type": "Feature",
       "id": 76,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5844339,
+          -33.4955269
+        ]
+      },
       "properties": {
-        "nom_comuna": "La Florida",
-        "tramo": "Américo Vespucio Sur Sur Oriente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "4.2 Gnmo. de Alderete - Vicuña Mackena",
-        "cod_comuna": "13110",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 76,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 5.3",
+        "nombre": "PORTICO 5.3",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P5.3 Quilín - Las Torres (Longitud 5,49 Kms)",
+        "sentido": "oriente-poniente",
+        "descripcion_original": "P5.3 Quilín - Las Torres (Longitud 5,49 Kms) | Sentido oriente-poniente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.58448299977836,
-          -33.49606699921103
-        ]
-      },
+      "type": "Feature",
       "id": 77,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5845222,
+          -33.4961278
+        ]
+      },
       "properties": {
-        "nom_comuna": "Peñalolén",
-        "tramo": "Américo Vespucio Sur Sur Oriente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "5.4 Las Torres - Quilín",
-        "cod_comuna": "13122",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 77,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 5.4",
+        "nombre": "PORTICO 5.4",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P5.4 Quilín - Las Torres",
+        "sentido": "poniente-oriente",
+        "descripcion_original": "P5.4 Quilín - Las Torres | Sentido poniente-oriente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.57874299963632,
-          -33.48096299883538
-        ]
-      },
+      "type": "Feature",
       "id": 78,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5790327,
+          -33.4809223
+        ]
+      },
       "properties": {
-        "nom_comuna": "Peñalolén",
-        "tramo": "Américo Vespucio Sur Sur Oriente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "5.2 Quilín - Grecia",
-        "cod_comuna": "13122",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 78,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 5.1",
+        "nombre": "PORTICO 5.1",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P5.1 Grecia - Quilín (Longitud 1,21 Kms)",
+        "sentido": "oriente-poniente",
+        "descripcion_original": "P5.1 Grecia - Quilín (Longitud 1,21 Kms) | Sentido oriente-poniente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.57904700017438,
-          -33.48101299887203
-        ]
-      },
+      "type": "Feature",
       "id": 79,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5787826,
+          -33.4810403
+        ]
+      },
       "properties": {
-        "nom_comuna": "Macul",
-        "tramo": "Américo Vespucio Sur Sur Oriente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "5.1 Grecia - Quilín",
-        "cod_comuna": "13118",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 79,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 5.2",
+        "nombre": "PORTICO 5.2",
+        "contrato": "Vespucio Sur",
+        "autopista": "Vespucio Sur",
+        "tramo": "P5.2 Grecia - Quilín",
+        "sentido": "poniente-oriente",
+        "descripcion_original": "P5.2 Grecia - Quilín | Sentido poniente-oriente",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.58448300040264,
-          -33.49563099870472
-        ]
-      },
+      "type": "Feature",
       "id": 80,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7530666,
+          -33.4833891
+        ]
+      },
       "properties": {
-        "nom_comuna": "Macul",
-        "tramo": "Américo Vespucio Sur Sur Oriente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "5.3 Quilín - Las Torres",
-        "cod_comuna": "13118",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 80,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 1",
+        "nombre": "PORTICO 1",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "RUTA 78 - SANTA ELENA",
+        "sentido": "PONIENTE-ORIENTE",
+        "descripcion_original": "PONIENTE-ORIENTE | RUTA 78 - SANTA ELENA",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.6048509996592,
-          -33.52984099940288
-        ]
-      },
+      "type": "Feature",
       "id": 81,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.753565,
+          -33.4829019
+        ]
+      },
       "properties": {
-        "nom_comuna": "La Florida",
-        "tramo": "Américo Vespucio Sur Sur Oriente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "4.1 Gnmo. de Alderete - Santa Julia",
-        "cod_comuna": "13110",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 81,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 17",
+        "nombre": "PORTICO 17",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "LOS MARES - RUTA 78",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "ORIENTE - PONIENTE | LOS MARES - RUTA 78",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.6529860000357,
-          -33.53983899903646
-        ]
-      },
+      "type": "Feature",
       "id": 82,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.767133,
+          -33.4563503
+        ]
+      },
       "properties": {
-        "nom_comuna": "La Cisterna",
-        "tramo": "Américo Vespucio Sur Sur Oriente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "3.1 Santa Rosa - Gran Avenida",
-        "cod_comuna": "13109",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 82,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 2",
+        "nombre": "PORTICO 2",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "RUTA 688 - LOS MARES",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "ORIENTE - PONIENTE | RUTA 688 - LOS MARES",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.6764250002638,
-          -33.53383899869815
-        ]
-      },
+      "type": "Feature",
       "id": 83,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7729545,
+          -33.4511801
+        ]
+      },
       "properties": {
-        "nom_comuna": "La Cisterna",
-        "tramo": "Américo Vespucio Sur Sur Oriente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "3.3 Gran Avenida - Ruta 5",
-        "cod_comuna": "13109",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 83,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 16",
+        "nombre": "PORTICO 16",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "SANTA ELENA - RUTA 68",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "PONIENTE - ORIENTE | SANTA ELENA - RUTA 68",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.69408000033167,
-          -33.52601499930982
-        ]
-      },
+      "type": "Feature",
       "id": 84,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7831105,
+          -33.4386834
+        ]
+      },
       "properties": {
-        "nom_comuna": "Lo Espejo",
-        "tramo": "Américo Vespucio Sur Sur Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "2.1 Ruta 5 - General Velásquez",
-        "cod_comuna": "13116",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 84,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 3",
+        "nombre": "PORTICO 3",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "PONIENTE - ORIENTE | RUTA 68 - COSTANERA NORTE",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.71258800052564,
-          -33.51653999874823
-        ]
-      },
+      "type": "Feature",
       "id": 85,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.784835,
+          -33.4312994
+        ]
+      },
       "properties": {
-        "nom_comuna": "Cerrillos",
-        "tramo": "Américo Vespucio Sur Sur Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "1.1 General Velásquez - Ruta 78",
-        "cod_comuna": "13102",
-        "contrato": "Sistema Américo Vespucio Sur. Ruta 78 - Av. Grecia",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 85,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 4",
+        "nombre": "PORTICO 4",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "ORIENTE - PONIENTE | COSTANERA NORTE - RUTA 68",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.61977999967772,
-          -33.422119999172196
-        ]
-      },
+      "type": "Feature",
       "id": 86,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7755762,
+          -33.3996064
+        ]
+      },
       "properties": {
-        "nom_comuna": "Providencia",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "SB Salida Bellavista",
-        "cod_comuna": "13123",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 86,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 5",
+        "nombre": "PORTICO 5",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "PONIENTE - ORIENTE | COSTANERA NORTE - CONDELL",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.63946700009701,
-          -33.43457199900576
-        ]
-      },
+      "type": "Feature",
       "id": 87,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7755253,
+          -33.3993254
+        ]
+      },
       "properties": {
-        "nom_comuna": "Recoleta",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "EP Entrada Purísima",
-        "cod_comuna": "13127",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 87,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 6",
+        "nombre": "PORTICO 6",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "ORIENTE - PONIENTE | CONDELL - COSTANERA NORTE",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.65719999988605,
-          -33.43028999872858
-        ]
-      },
+      "type": "Feature",
       "id": 88,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7539408,
+          -33.3813353
+        ]
+      },
       "properties": {
-        "nom_comuna": "Independencia",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "EV Entrada Vivaceta",
-        "cod_comuna": "13108",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 88,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 7",
+        "nombre": "PORTICO 7",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "CONDELL - LO ECHEVERS",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "PONIENTE - ORIENTE | CONDELL - LO ECHEVERS",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.59268699968442,
-          -33.384603999138484
-        ]
-      },
+      "type": "Feature",
       "id": 89,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7112536,
+          -33.3730028
+        ]
+      },
       "properties": {
-        "nom_comuna": "Vitacura",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P2.1  Gran Vía – Centenario",
-        "cod_comuna": "13132",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 89,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 8",
+        "nombre": "PORTICO 8",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "ORIENTE - PONIENTE | RUTA 5 NORTE - CONDELL",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.59258400005331,
-          -33.384688999576
-        ]
-      },
+      "type": "Feature",
       "id": 90,
-      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7042902,
+          -33.3688421
+        ]
+      },
       "properties": {
-        "nom_comuna": "Vitacura",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P2.1  Centenario – Gran Vía",
-        "cod_comuna": "13132",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
         "objectid": 90,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 9",
+        "nombre": "PORTICO 9",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "PONIENTE - ORIENTE | LO ECHEVERS - RUTA 5 NORTE",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.7537259996514,
-          -33.48267799887083
-        ]
-      },
+      "type": "Feature",
       "id": 91,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Maipú",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P17 Los Mares - Ruta 78",
-        "cod_comuna": "13119",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 91,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -70.77295500003761,
-          -33.45121899903005
+          -70.6968664,
+          -33.3659318
         ]
       },
-      "id": 92,
-      "type": "Feature",
       "properties": {
-        "nom_comuna": "Pudahuel",
-        "tramo": "Troncal Américo Vespucio Norte; Km (7,800 - 36,300)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P16 Santa Elena - Ruta 68",
-        "cod_comuna": "13124",
-        "contrato": "Sistema Américo Vespucio Norponiente, Av. El Salto - Ruta 78",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
+        "objectid": 91,
+        "descripcio": "PORTICO 10",
+        "nombre": "PORTICO 10",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "PONIENTE - ORIENTE | RUTA 5 NORTE - PEDRO FONTOVA",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 92,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6950932,
+          -33.3657681
+        ]
+      },
+      "properties": {
         "objectid": 92,
-        "nom_provincia": "Santiago"
+        "descripcio": "PORTICO 11",
+        "nombre": "PORTICO 11",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "ORIENTE - PONIENTE | PEDRO FONTOVA - RUTA 5 NORTE",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 93,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6649454,
+          -33.3734001
+        ]
+      },
+      "properties": {
+        "objectid": 93,
+        "descripcio": "PORTICO 12",
+        "nombre": "PORTICO 12",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "PEDRO FONTOVA - GUANACO",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "PONIENTE - ORIENTE | PEDRO FONTOVA - GUANACO",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 94,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6646255,
+          -33.3733513
+        ]
+      },
+      "properties": {
+        "objectid": 94,
+        "descripcio": "PORTICO 13",
+        "nombre": "PORTICO 13",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "RECOLETA - PEDRO FONTOVA",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "ORIENTE - PONIENTE | RECOLETA - PEDRO FONTOVA",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 95,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6329552,
+          -33.3886435
+        ]
+      },
+      "properties": {
+        "objectid": 95,
+        "descripcio": "PORTICO 15",
+        "nombre": "PORTICO 15",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "EL SALTO - RECOLETA",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "ORIENTE - PONIENTE | EL SALTO - RECOLETA",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 96,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6333187,
+          -33.3885853
+        ]
+      },
+      "properties": {
+        "objectid": 96,
+        "descripcio": "PORTICO 14",
+        "nombre": "PORTICO 14",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "GUANACO - EL SALTO",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "PONIENTE - ORIENTE | GUANACO - EL SALTO",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 97,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6157217,
+          -33.3986148
+        ]
+      },
+      "properties": {
+        "objectid": 97,
+        "descripcio": "PORTICO 101",
+        "nombre": "PORTICO 101",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "EL SALTO - KENNEDY",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "PONIENTE - ORIENTE | EL SALTO - KENNEDY",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 98,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6151269,
+          -33.3987763
+        ]
+      },
+      "properties": {
+        "objectid": 98,
+        "descripcio": "PORTICO 102",
+        "nombre": "PORTICO 102",
+        "contrato": "Vespucio Norte",
+        "autopista": "Vespucio Norte",
+        "tramo": "KENNEDY - EL SALTO",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "ORIENTE - PONIENTE | KENNEDY - EL SALTO",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 99,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7461932,
+          -33.4877811
+        ]
+      },
+      "properties": {
+        "objectid": 99,
+        "descripcio": "PEAJE VESPUCIO PONIENTE",
+        "nombre": "PEAJE VESPUCIO PONIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "AMERICO VESPUCIO 8700",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "AUTOPISTA DEL SOL | ORIENTE - PONIENTE | AMERICO VESPUCIO 8700",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 100,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7457104,
+          -33.4881972
+        ]
+      },
+      "properties": {
+        "objectid": 100,
+        "descripcio": "PEAJE VESPUCIO ORIENTE",
+        "nombre": "PEAJE VESPUCIO ORIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "AMERICO VESPUCIO 8700",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "AUTOPISTA DEL SOL | PONIENTE - ORIENTE | AMERICO VESPUCIO 8700",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 101,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7994665,
+          -33.5054129
+        ]
+      },
+      "properties": {
+        "objectid": 101,
+        "descripcio": "PEAJE RINCONADA PONIENTE",
+        "nombre": "PEAJE RINCONADA PONIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "RINCONADA KM 14.430",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "AUTOPISTA DEL SOL | ORIENTE - PONIENTE | RINCONADA KM 14.430",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 102,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7989435,
+          -33.5055426
+        ]
+      },
+      "properties": {
+        "objectid": 102,
+        "descripcio": "PEAJE RINCONADA ORIENTE",
+        "nombre": "PEAJE RINCONADA ORIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "RINCONADA KM 14.430",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "AUTOPISTA DEL SOL | PONIENTE - ORIENTE | RINCONADA KM 14.430",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 103,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.8505839,
+          -33.6074235
+        ]
+      },
+      "properties": {
+        "objectid": 103,
+        "descripcio": "PEAJE MALLOCO ORIENTE",
+        "nombre": "PEAJE MALLOCO ORIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "MALLOCO KM 28.240",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "AUTOPISTA DEL SOL | PONIENTE - ORIENTE | MALLOCO KM 28.240",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 104,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.8507623,
+          -33.607371
+        ]
+      },
+      "properties": {
+        "objectid": 104,
+        "descripcio": "PEAJE MALLOCO PONIENTE",
+        "nombre": "PEAJE MALLOCO PONIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "MALLOCO KM 28.240",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "AUTOPISTA DEL SOL | ORIENTE - PONIENTE | MALLOCO KM 28.240",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 105,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.9227336,
+          -33.6735677
+        ]
+      },
+      "properties": {
+        "objectid": 105,
+        "descripcio": "PEAJE TALAGANTE ORIENTE",
+        "nombre": "PEAJE TALAGANTE ORIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "TALAGANTE KM 38.440",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "AUTOPISTA DEL SOL | PONIENTE - ORIENTE | TALAGANTE KM 38.440",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 106,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.922916,
+          -33.6732596
+        ]
+      },
+      "properties": {
+        "objectid": 106,
+        "descripcio": "PEAJE TALAGANTE PONIENTE",
+        "nombre": "PEAJE TALAGANTE PONIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "TALAGANTE KM 38.440",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "AUTOPISTA DEL SOL | PONIENTE - ORIENTE | TALAGANTE KM 38.440",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 107,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.967662,
+          -33.6984747
+        ]
+      },
+      "properties": {
+        "objectid": 107,
+        "descripcio": "PEAJE EL MONTE ORIENTE",
+        "nombre": "PEAJE EL MONTE ORIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "EL MONTE KM 43.450",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "PONIENTE - ORIENTE | EL MONTE KM 43.450",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 108,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.9677519,
+          -33.6983598
+        ]
+      },
+      "properties": {
+        "objectid": 108,
+        "descripcio": "PEAJE EL MONTE PONIENTE",
+        "nombre": "PEAJE EL MONTE PONIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "EL MONTE KM 43.450",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "AUTOPISTA DEL SOL | ORIENTE - PONIENTE | EL MONTE KM 43.450",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 109,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0496684,
+          -33.6916027
+        ]
+      },
+      "properties": {
+        "objectid": 109,
+        "descripcio": "PEAJE EL PAICO PONIENTE",
+        "nombre": "PEAJE EL PAICO PONIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "EL PAICO KM 51.550",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "AUTOPISTA DEL SOL | ORIENTE - PONIENTE | EL PAICO KM 51.550",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 110,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0498563,
+          -33.6919696
+        ]
+      },
+      "properties": {
+        "objectid": 110,
+        "descripcio": "PEAJE EL PAICO ORIENTE",
+        "nombre": "PEAJE EL PAICO ORIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "EL PAICO KM 51.550",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "AUTOPISTA DEL SOL | PONIENTE - ORIENTE | EL PAICO KM 51.550",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 111,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1546166,
+          -33.6694559
+        ]
+      },
+      "properties": {
+        "objectid": 111,
+        "descripcio": "PEAJE POMAIRE PONIENTE",
+        "nombre": "PEAJE POMAIRE PONIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "BIDIRECCIONAL",
+        "sentido": "",
+        "descripcion_original": "AUTOPISTA DEL SOL | BIDIRECCIONAL | AUTOPISTA DEL SOL KM 61.7 C*",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 112,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1545871,
+          -33.6698481
+        ]
+      },
+      "properties": {
+        "objectid": 112,
+        "descripcio": "PEAJE POMAIRE ORIENTE",
+        "nombre": "PEAJE POMAIRE ORIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "BIDIRECCIONAL",
+        "sentido": "",
+        "descripcion_original": "AUTOPISTA DEL SOL | BIDIRECCIONAL | AUTOPISTA DEL SOL KM 51.7 CA*",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 113,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1974313,
+          -33.6759589
+        ]
+      },
+      "properties": {
+        "objectid": 113,
+        "descripcio": "PEAJE MELIPILLA",
+        "nombre": "PEAJE MELIPILLA",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "BIDIRECCIONAL | GENERAL SAN MARTIN (CEMENTERIO PARQUE DE MELIPILLA)",
+        "sentido": "",
+        "descripcion_original": "AUTOPISTA DEL SOL | BIDIRECCIONAL | GENERAL SAN MARTIN (CEMENTERIO PARQUE DE MELIPILLA)",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 114,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.2001555,
+          -33.6732017
+        ]
+      },
+      "properties": {
+        "objectid": 114,
+        "descripcio": "PEAJE TRONCAL MELIPILLA",
+        "nombre": "PEAJE TRONCAL MELIPILLA",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "BIDIRECCIONAL",
+        "sentido": "",
+        "descripcion_original": "AUTOPISTA DEL SOL | BIDIRECCIONAL | AUTOPISTA DEL SOL KM 65.970",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 115,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.350223,
+          -33.6525271
+        ]
+      },
+      "properties": {
+        "objectid": 115,
+        "descripcio": "PEAJE PUANGE PONIENTE",
+        "nombre": "PEAJE PUANGE PONIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "PEAJE LATERAL PUANGE PONIENTE",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "AUTOPISTA DEL SOL | PEAJE LATERAL PUANGE PONIENTE | ORIENTE - PONIENTE | PUANGE - AUTOPISTA DEL SOL, KM 80.9",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 116,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.3503758,
+          -33.652881
+        ]
+      },
+      "properties": {
+        "objectid": 116,
+        "descripcio": "PEAJE PUANGE ORIENTE",
+        "nombre": "PEAJE PUANGE ORIENTE",
+        "contrato": "Autopista del Sol",
+        "autopista": "Autopista del Sol",
+        "tramo": "AUOPISTA DEL SOL",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "AUOPISTA DEL SOL | PONIENTE - ORIENTE | AUTOPISTA DEL SOL KM 80.9",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 117,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7037924,
+          -33.3579969
+        ]
+      },
+      "properties": {
+        "objectid": 117,
+        "descripcio": "PMVT 01N",
+        "nombre": "PMVT 01N",
+        "contrato": "Ruta 5 Santiago-Los Vilos",
+        "autopista": "Autovía Santiago-Lampa",
+        "tramo": "PASO SUPERIOR LO MARCOLETA",
+        "sentido": "SUR - NORTE",
+        "descripcion_original": "AUTOVIA SANTIAGO LAMPA | SUR - NORTE | PASO SUPERIOR LO MARCOLETA",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 118,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7040741,
+          -33.3579879
+        ]
+      },
+      "properties": {
+        "objectid": 118,
+        "descripcio": "PMVT 01S",
+        "nombre": "PMVT 01S",
+        "contrato": "Ruta 5 Santiago-Los Vilos",
+        "autopista": "Autovía Santiago-Lampa",
+        "tramo": "PASO SUPERIOR LO MARCOLETA",
+        "sentido": "NORTE - SUR",
+        "descripcion_original": "AUTOVIA SANTIAGO LAMPA | NORTE - SUR | PASO SUPERIOR LO MARCOLETA",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 119,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7119419,
+          -33.3398155
+        ]
+      },
+      "properties": {
+        "objectid": 119,
+        "descripcio": "PMVT 02N",
+        "nombre": "PMVT 02N",
+        "contrato": "Ruta 5 Santiago-Los Vilos",
+        "autopista": "Autovía Santiago-Lampa",
+        "tramo": "ENLACE BUENAVENTURA",
+        "sentido": "SUR - NORTE",
+        "descripcion_original": "AUTOVIA SANTIAGO LAMPA | SUR - NORTE | ENLACE BUENAVENTURA",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 120,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7122544,
+          -33.3398183
+        ]
+      },
+      "properties": {
+        "objectid": 120,
+        "descripcio": "PMVT 02S",
+        "nombre": "PMVT 02S",
+        "contrato": "Ruta 5 Santiago-Los Vilos",
+        "autopista": "Autovía Santiago-Lampa",
+        "tramo": "ENLACE BUENAVENTURA",
+        "sentido": "NORTE - SUR",
+        "descripcion_original": "AUTOVIA SANTIAGO LAMPA | NORTE - SUR | ENLACE BUENAVENTURA",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 121,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7221762,
+          -33.3170924
+        ]
+      },
+      "properties": {
+        "objectid": 121,
+        "descripcio": "PMVT 03N",
+        "nombre": "PMVT 03N",
+        "contrato": "Ruta 5 Santiago-Los Vilos",
+        "autopista": "Autovía Santiago-Lampa",
+        "tramo": "PASO SUPERIOR LA MONTAÑA",
+        "sentido": "NORTE - SUR",
+        "descripcion_original": "AUTOVIA SANTIAGO LAMPA | NORTE - SUR | PASO SUPERIOR LA MONTAÑA",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 122,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7224162,
+          -33.3170683
+        ]
+      },
+      "properties": {
+        "objectid": 122,
+        "descripcio": "PMVT 03S",
+        "nombre": "PMVT 03S",
+        "contrato": "Ruta 5 Santiago-Los Vilos",
+        "autopista": "Autovía Santiago-Lampa",
+        "tramo": "PASO SUPERIOR LA MONTAÑA",
+        "sentido": "SUR - NORTE",
+        "descripcion_original": "AUTOVIA SANTIAGO LAMPA | SUR - NORTE | PASO SUPERIOR LA MONTAÑA",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 123,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7388548,
+          -33.2799271
+        ]
+      },
+      "properties": {
+        "objectid": 123,
+        "descripcio": "PMVT 04N",
+        "nombre": "PMVT 04N",
+        "contrato": "Ruta 5 Santiago-Los Vilos",
+        "autopista": "Autovía Santiago-Lampa",
+        "tramo": "ENLACE LO PINTO",
+        "sentido": "SUR - NORTE",
+        "descripcion_original": "AUTOVIA SANTIAGO LAMPA | SUR - NORTE | ENLACE LO PINTO",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 124,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7391043,
+          -33.2799103
+        ]
+      },
+      "properties": {
+        "objectid": 124,
+        "descripcio": "PMVT 04S",
+        "nombre": "PMVT 04S",
+        "contrato": "Ruta 5 Santiago-Los Vilos",
+        "autopista": "Autovía Santiago-Lampa",
+        "tramo": "ENLACE LO PINTO",
+        "sentido": "NORTE - SUR",
+        "descripcion_original": "AUTOVIA SANTIAGO LAMPA | NORTE - SUR | ENLACE LO PINTO",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 125,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7588055,
+          -33.2356158
+        ]
+      },
+      "properties": {
+        "objectid": 125,
+        "descripcio": "PP5 ORIENTE",
+        "nombre": "PP5 ORIENTE",
+        "contrato": "Ruta 5 Santiago-Los Vilos",
+        "autopista": "Autovía Santiago-Lampa",
+        "tramo": "PEAJE LAMPA",
+        "sentido": "SUR - NORTE",
+        "descripcion_original": "AUTOVIA SANTIAGO LAMPA | SUR - NORTE | PEAJE LAMPA",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 126,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.7590322,
+          -33.235599
+        ]
+      },
+      "properties": {
+        "objectid": 126,
+        "descripcio": "PP5 PONIENTE",
+        "nombre": "PP5 PONIENTE",
+        "contrato": "Ruta 5 Santiago-Los Vilos",
+        "autopista": "Autovía Santiago-Lampa",
+        "tramo": "PEAJE LAMPA",
+        "sentido": "NORTE - SUR",
+        "descripcion_original": "AUTOVIA SANTIAGO LAMPA | NORTE - SUR | PEAJE LAMPA",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 127,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6704944,
+          -33.2994749
+        ]
+      },
+      "properties": {
+        "objectid": 127,
+        "descripcio": "P63",
+        "nombre": "P63",
+        "contrato": "Autopista Nororiente",
+        "autopista": "Autopista Nororiente",
+        "tramo": "",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "AUSTOPISTA NORORIENTE | PONIENTE - ORIENTE | TRONCAL PONIENTE RUTA 5 NORTE - ENLACE AV. DEL VALLE",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 128,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6704985,
+          -33.2993768
+        ]
+      },
+      "properties": {
+        "objectid": 128,
+        "descripcio": "P62",
+        "nombre": "P62",
+        "contrato": "Autopista Nororiente",
+        "autopista": "Autopista Nororiente",
+        "tramo": "",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "AUTOPISTA NORORIENTE | ORIENTE - PONIENTE | TRONCAL PONIENTE ENLACE AV. DEL VALLE - RUTA 5 NORTE",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 129,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6341873,
+          -33.3113811
+        ]
+      },
+      "properties": {
+        "objectid": 129,
+        "descripcio": "P65",
+        "nombre": "P65",
+        "contrato": "Autopista Nororiente",
+        "autopista": "Autopista Nororiente",
+        "tramo": "",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "AUTOPISTA NORORIENTE | PONIENTE - ORIENTE | TRONCAL ORIENTE ENLACE AV. DEL VALLE - NUDO CENTENARIO",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 130,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6342678,
+          -33.3112757
+        ]
+      },
+      "properties": {
+        "objectid": 130,
+        "descripcio": "P64",
+        "nombre": "P64",
+        "contrato": "Autopista Nororiente",
+        "autopista": "Autopista Nororiente",
+        "tramo": "",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "AUTOPISTA NORORIENTE | ORIENTE - PONIENTE | TRONCAL ORIENTE NUDO CENTENARIO - ENLACE AV. DEL VALLE",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 131,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6248863,
+          -33.3246661
+        ]
+      },
+      "properties": {
+        "objectid": 131,
+        "descripcio": "P60",
+        "nombre": "P60",
+        "contrato": "Autopista Nororiente",
+        "autopista": "Autopista Nororiente",
+        "tramo": "LATERAL ENTRADA LLANO",
+        "sentido": "PONIENTE - ORIENTE",
+        "descripcion_original": "AUTOPISTA NORORIENTE | PONIENTE - ORIENTE | LATERAL ENTRADA LLANO",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 132,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6243235,
+          -33.3258663
+        ]
+      },
+      "properties": {
+        "objectid": 132,
+        "descripcio": "P61",
+        "nombre": "P61",
+        "contrato": "Autopista Nororiente",
+        "autopista": "Autopista Nororiente",
+        "tramo": "LATERAL SALIDA LLANO",
+        "sentido": "ORIENTE - PONIENTE",
+        "descripcion_original": "AUTOPISTA NORORIENTE | ORIENTE - PONIENTE | LATERAL SALIDA LLANO",
+        "tipo_peaje": "Pórtico",
+        "fuente": "PORTICOS.kml (fuente original)"
       }
     },
     {
@@ -2217,7 +3045,7 @@
           -33.41661199907346
         ]
       },
-      "id": 93,
+      "id": 133,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Pudahuel",
@@ -2229,344 +3057,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 93,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.66950699994949,
-          -33.5071639991675
-        ]
-      },
-      "id": 94,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Pedro Aguirre Cerda",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA30 Americo Vespucio -  Departamental",
-        "cod_comuna": "13121",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 94,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.71075799951433,
-          -33.55866199952454
-        ]
-      },
-      "id": 95,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "San Bernardo",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA32 Las Acacias - Lo blanco",
-        "cod_comuna": "13401",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "134",
-        "objectid": 95,
-        "nom_provincia": "Maipo"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.65616700000696,
-          -33.468999999553134
-        ]
-      },
-      "id": 96,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Santiago",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA31 Carlos Valdovinos - Alameda",
-        "cod_comuna": "13101",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 96,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.73967199984858,
-          -33.41170199873926
-        ]
-      },
-      "id": 97,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Renca",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P6.1 Carrascal -Petersen",
-        "cod_comuna": "13128",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 97,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.76640100044034,
-          -33.4129429986994
-        ]
-      },
-      "id": 98,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Renca",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P6.2 Petersen Americo Vespucio Poniente",
-        "cod_comuna": "13128",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 98,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.76668399946168,
-          -33.413062998918114
-        ]
-      },
-      "id": 99,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Renca",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P6.2 Americo Vespucio Poniente - Petersen",
-        "cod_comuna": "13128",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 99,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.73968699946577,
-          -33.41181399915557
-        ]
-      },
-      "id": 100,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Renca",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P6.1 Petersen Carrascal",
-        "cod_comuna": "13128",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 100,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.5997209996602,
-          -33.407919999286314
-        ]
-      },
-      "id": 101,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Vitacura",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P8.1 Kennedy - Costanera Sur",
-        "cod_comuna": "13132",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 101,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.60434700010521,
-          -33.40909699873616
-        ]
-      },
-      "id": 102,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Las Condes",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P8.0 Costanera Norte - Kennedy",
-        "cod_comuna": "13114",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 102,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.60391800053611,
-          -33.40902499941949
-        ]
-      },
-      "id": 103,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Las Condes",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P8.1 Costanera Sur - Kennedy",
-        "cod_comuna": "13114",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 103,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.60193499995661,
-          -33.40844499873909
-        ]
-      },
-      "id": 104,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Las Condes",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P8.2 Santa María - Kennedy",
-        "cod_comuna": "13114",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 104,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.60223400029143,
-          -33.40997999899813
-        ]
-      },
-      "id": 105,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Las Condes",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P8.3 Vitacura - Kennedy",
-        "cod_comuna": "13114",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 105,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.5997169997726,
-          -33.40798299924038
-        ]
-      },
-      "id": 106,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Vitacura",
-        "tramo": "Pte Tabancura-Vespucio Poniente",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P8.0 Kennedy – Costanera Norte",
-        "cod_comuna": "13132",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 106,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.71582199987502,
-          -33.5967129988388
-        ]
-      },
-      "id": 107,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "San Bernardo",
-        "tramo": "Longitudinal Sur Avda Bernardo Ohiggins  (Km 0.000 - 30.796,44)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PA 37 Catemito -Calera de Tango",
-        "cod_comuna": "13401",
-        "contrato": "Sistema Norte-Sur",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "134",
-        "objectid": 107,
-        "nom_provincia": "Maipo"
+        "objectid": 133,
+        "nom_provincia": "Santiago",
+        "autopista": "Acceso Vial Aeropuerto AMB",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2577,7 +3071,7 @@
           -33.36564899915522
         ]
       },
-      "id": 108,
+      "id": 134,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Pudahuel",
@@ -2589,56 +3083,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 108,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.52261600011133,
-          -33.37103099956412
-        ]
-      },
-      "id": 109,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Vitacura",
-        "tramo": "Padre Arteaga-Pte Tabancura (Km -0.700 - 2.650)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P0 Puente Padre Arteaga - Puente San Francisco",
-        "cod_comuna": "13132",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 109,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.52297199964076,
-          -33.37124199879781
-        ]
-      },
-      "id": 110,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Vitacura",
-        "tramo": "Padre Arteaga-Pte Tabancura (Km -0.700 - 2.650)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P0 Puente San Francisco  Puente Padre Arteaga",
-        "cod_comuna": "13132",
-        "contrato": "Concesión Internacional Sistema Oriente Poniente Costanera Norte",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "131",
-        "objectid": 110,
-        "nom_provincia": "Santiago"
+        "objectid": 134,
+        "nom_provincia": "Santiago",
+        "autopista": "Acceso Vial Aeropuerto AMB",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2649,7 +3097,7 @@
           -33.430149999430796
         ]
       },
-      "id": 111,
+      "id": 135,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Las Condes",
@@ -2661,8 +3109,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 111,
-        "nom_provincia": "Santiago"
+        "objectid": 135,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2673,7 +3123,7 @@
           -33.42047999898622
         ]
       },
-      "id": 112,
+      "id": 136,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Las Condes",
@@ -2685,8 +3135,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 112,
-        "nom_provincia": "Santiago"
+        "objectid": 136,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2697,7 +3149,7 @@
           -33.40955999911734
         ]
       },
-      "id": 113,
+      "id": 137,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Las Condes",
@@ -2709,8 +3161,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 113,
-        "nom_provincia": "Santiago"
+        "objectid": 137,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2721,7 +3175,7 @@
           -33.40137499929204
         ]
       },
-      "id": 114,
+      "id": 138,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Vitacura",
@@ -2733,8 +3187,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 114,
-        "nom_provincia": "Santiago"
+        "objectid": 138,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2745,7 +3201,7 @@
           -33.396215998870815
         ]
       },
-      "id": 115,
+      "id": 139,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Huechuraba",
@@ -2757,8 +3213,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 115,
-        "nom_provincia": "Santiago"
+        "objectid": 139,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2769,7 +3227,7 @@
           -33.396215998870815
         ]
       },
-      "id": 116,
+      "id": 140,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Huechuraba",
@@ -2781,8 +3239,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 116,
-        "nom_provincia": "Santiago"
+        "objectid": 140,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2793,7 +3253,7 @@
           -33.400237999123796
         ]
       },
-      "id": 117,
+      "id": 141,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Vitacura",
@@ -2805,8 +3265,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 117,
-        "nom_provincia": "Santiago"
+        "objectid": 141,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2817,7 +3279,7 @@
           -33.404589999274215
         ]
       },
-      "id": 118,
+      "id": 142,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Las Condes",
@@ -2829,8 +3291,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 118,
-        "nom_provincia": "Santiago"
+        "objectid": 142,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2841,7 +3305,7 @@
           -33.424266998736975
         ]
       },
-      "id": 119,
+      "id": 143,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Las Condes",
@@ -2853,8 +3317,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 119,
-        "nom_provincia": "Santiago"
+        "objectid": 143,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2865,7 +3331,7 @@
           -33.39526399922354
         ]
       },
-      "id": 120,
+      "id": 144,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Huechuraba",
@@ -2877,8 +3343,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 120,
-        "nom_provincia": "Santiago"
+        "objectid": 144,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2889,7 +3357,7 @@
           -33.41236799951051
         ]
       },
-      "id": 121,
+      "id": 145,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Las Condes",
@@ -2901,8 +3369,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 121,
-        "nom_provincia": "Santiago"
+        "objectid": 145,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2913,7 +3383,7 @@
           -33.40023899930544
         ]
       },
-      "id": 122,
+      "id": 146,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Vitacura",
@@ -2925,8 +3395,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 122,
-        "nom_provincia": "Santiago"
+        "objectid": 146,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2937,7 +3409,7 @@
           -33.40209999881147
         ]
       },
-      "id": 123,
+      "id": 147,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Las Condes",
@@ -2949,8 +3421,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 123,
-        "nom_provincia": "Santiago"
+        "objectid": 147,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2961,7 +3435,7 @@
           -33.403809999261746
         ]
       },
-      "id": 124,
+      "id": 148,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Las Condes",
@@ -2973,8 +3447,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 124,
-        "nom_provincia": "Santiago"
+        "objectid": 148,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -2985,7 +3461,7 @@
           -33.39658999934912
         ]
       },
-      "id": 125,
+      "id": 149,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Vitacura",
@@ -2997,8 +3473,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 125,
-        "nom_provincia": "Santiago"
+        "objectid": 149,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -3009,7 +3487,7 @@
           -33.39081999951417
         ]
       },
-      "id": 126,
+      "id": 150,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Vitacura",
@@ -3021,8 +3499,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 126,
-        "nom_provincia": "Santiago"
+        "objectid": 150,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -3033,7 +3513,7 @@
           -33.396009999272444
         ]
       },
-      "id": 127,
+      "id": 151,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Vitacura",
@@ -3045,8 +3525,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 127,
-        "nom_provincia": "Santiago"
+        "objectid": 151,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -3057,7 +3539,7 @@
           -33.39154999893843
         ]
       },
-      "id": 128,
+      "id": 152,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Vitacura",
@@ -3069,8 +3551,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 128,
-        "nom_provincia": "Santiago"
+        "objectid": 152,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -3081,7 +3565,7 @@
           -33.392808999370956
         ]
       },
-      "id": 129,
+      "id": 153,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Vitacura",
@@ -3093,8 +3577,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 129,
-        "nom_provincia": "Santiago"
+        "objectid": 153,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -3105,7 +3591,7 @@
           -33.425981998927426
         ]
       },
-      "id": 130,
+      "id": 154,
       "type": "Feature",
       "properties": {
         "nom_comuna": "Las Condes",
@@ -3117,8 +3603,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 130,
-        "nom_provincia": "Santiago"
+        "objectid": 154,
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     },
     {
@@ -3129,7 +3617,7 @@
           -33.432711999201935
         ]
       },
-      "id": 131,
+      "id": 155,
       "type": "Feature",
       "properties": {
         "nom_comuna": "La Reina",
@@ -3141,632 +3629,10 @@
         "tipo_peaje": "Punto de Cobro",
         "cod_region": "13",
         "cod_provincia": "131",
-        "objectid": 131,
-        "nom_provincia": "Santiago"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.7461932,
-          -33.4877811
-        ]
-      },
-      "id": 132,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "AMERICO VESPUCIO 8700",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE VESPUCIO PONIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 132,
-        "nom_provincia": "",
-        "sentido": "ORIENTE - PONIENTE",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.7457104,
-          -33.4881972
-        ]
-      },
-      "id": 133,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "AMERICO VESPUCIO 8700",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE VESPUCIO ORIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 133,
-        "nom_provincia": "",
-        "sentido": "PONIENTE - ORIENTE",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.7994665,
-          -33.5054129
-        ]
-      },
-      "id": 134,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "RINCONADA KM 14.430",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE RINCONADA PONIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 134,
-        "nom_provincia": "",
-        "sentido": "ORIENTE - PONIENTE",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.7989435,
-          -33.5055426
-        ]
-      },
-      "id": 135,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "RINCONADA KM 14.430",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE RINCONADA ORIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 135,
-        "nom_provincia": "",
-        "sentido": "PONIENTE - ORIENTE",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.8505839,
-          -33.6074235
-        ]
-      },
-      "id": 136,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "MALLOCO KM 28.240",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE MALLOCO ORIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 136,
-        "nom_provincia": "",
-        "sentido": "PONIENTE - ORIENTE",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.8507623,
-          -33.607371
-        ]
-      },
-      "id": 137,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "MALLOCO KM 28.240",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE MALLOCO PONIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 137,
-        "nom_provincia": "",
-        "sentido": "ORIENTE - PONIENTE",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.9227336,
-          -33.6735677
-        ]
-      },
-      "id": 138,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "TALAGANTE KM 38.440",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE TALAGANTE ORIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 138,
-        "nom_provincia": "",
-        "sentido": "PONIENTE - ORIENTE",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.922916,
-          -33.6732596
-        ]
-      },
-      "id": 139,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "TALAGANTE KM 38.440",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE TALAGANTE PONIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 139,
-        "nom_provincia": "",
-        "sentido": "PONIENTE - ORIENTE",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.967662,
-          -33.6984747
-        ]
-      },
-      "id": 140,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "EL MONTE KM 43.450",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE EL MONTE ORIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 140,
-        "nom_provincia": "",
-        "sentido": "PONIENTE - ORIENTE",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.9677519,
-          -33.6983598
-        ]
-      },
-      "id": 141,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "EL MONTE KM 43.450",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE EL MONTE PONIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 141,
-        "nom_provincia": "",
-        "sentido": "ORIENTE - PONIENTE",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.0496684,
-          -33.6916027
-        ]
-      },
-      "id": 142,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "EL PAICO KM 51.550",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE EL PAICO PONIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 142,
-        "nom_provincia": "",
-        "sentido": "ORIENTE - PONIENTE",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.0498563,
-          -33.6919696
-        ]
-      },
-      "id": 143,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "EL PAICO KM 51.550",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE EL PAICO ORIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 143,
-        "nom_provincia": "",
-        "sentido": "PONIENTE - ORIENTE",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.1546166,
-          -33.6694559
-        ]
-      },
-      "id": 144,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "Autopista del Sol",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE POMAIRE PONIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 144,
-        "nom_provincia": "",
-        "sentido": "BIDIRECCIONAL",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.1545871,
-          -33.6698481
-        ]
-      },
-      "id": 145,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "Autopista del Sol",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE POMAIRE ORIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 145,
-        "nom_provincia": "",
-        "sentido": "BIDIRECCIONAL",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.1974313,
-          -33.6759589
-        ]
-      },
-      "id": 146,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "GENERAL SAN MARTIN (CEMENTERIO PARQUE DE MELIPILLA)",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE MELIPILLA",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 146,
-        "nom_provincia": "",
-        "sentido": "BIDIRECCIONAL",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.2001555,
-          -33.6732017
-        ]
-      },
-      "id": 147,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "Autopista del Sol",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE TRONCAL MELIPILLA",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 147,
-        "nom_provincia": "",
-        "sentido": "BIDIRECCIONAL",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.350223,
-          -33.6525271
-        ]
-      },
-      "id": 148,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "PEAJE LATERAL PUANGE PONIENTE",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE PUANGE PONIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 148,
-        "nom_provincia": "",
-        "sentido": "ORIENTE - PONIENTE",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.3503758,
-          -33.652881
-        ]
-      },
-      "id": 149,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "Autopista del Sol",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "PEAJE PUANGE ORIENTE",
-        "cod_comuna": "",
-        "contrato": "Autopista del Sol",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 149,
-        "nom_provincia": "",
-        "sentido": "PONIENTE - ORIENTE",
-        "fuente": "KML AUSTOPISTA DEL SOL (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.6704944,
-          -33.2994749
-        ]
-      },
-      "id": 150,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "TRONCAL PONIENTE RUTA 5 NORTE - ENLACE AV. DEL VALLE",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P63",
-        "cod_comuna": "",
-        "contrato": "Autopista Nororiente",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 150,
-        "nom_provincia": "",
-        "sentido": "PONIENTE - ORIENTE",
-        "fuente": "KML AUTOPISTA NORORIENTE (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.6704985,
-          -33.2993768
-        ]
-      },
-      "id": 151,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "TRONCAL PONIENTE ENLACE AV. DEL VALLE - RUTA 5 NORTE",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P62",
-        "cod_comuna": "",
-        "contrato": "Autopista Nororiente",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 151,
-        "nom_provincia": "",
-        "sentido": "ORIENTE - PONIENTE",
-        "fuente": "KML AUTOPISTA NORORIENTE (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.6341873,
-          -33.3113811
-        ]
-      },
-      "id": 152,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "TRONCAL ORIENTE ENLACE AV. DEL VALLE - NUDO CENTENARIO",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P65",
-        "cod_comuna": "",
-        "contrato": "Autopista Nororiente",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 152,
-        "nom_provincia": "",
-        "sentido": "PONIENTE - ORIENTE",
-        "fuente": "KML AUTOPISTA NORORIENTE (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.6342678,
-          -33.3112757
-        ]
-      },
-      "id": 153,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "TRONCAL ORIENTE NUDO CENTENARIO - ENLACE AV. DEL VALLE",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P64",
-        "cod_comuna": "",
-        "contrato": "Autopista Nororiente",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 153,
-        "nom_provincia": "",
-        "sentido": "ORIENTE - PONIENTE",
-        "fuente": "KML AUTOPISTA NORORIENTE (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.6248863,
-          -33.3246661
-        ]
-      },
-      "id": 154,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "LATERAL ENTRADA LLANO",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P60",
-        "cod_comuna": "",
-        "contrato": "Autopista Nororiente",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
-        "objectid": 154,
-        "nom_provincia": "",
-        "sentido": "PONIENTE - ORIENTE",
-        "fuente": "KML AUTOPISTA NORORIENTE (1).kml"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.6243235,
-          -33.3258663
-        ]
-      },
-      "id": 155,
-      "type": "Feature",
-      "properties": {
-        "nom_comuna": "Por verificar",
-        "tramo": "LATERAL SALIDA LLANO",
-        "nom_region": "Metropolitana de Santiago",
-        "descripcio": "P61",
-        "cod_comuna": "",
-        "contrato": "Autopista Nororiente",
-        "tipo_peaje": "Punto de Cobro",
-        "cod_region": "13",
-        "cod_provincia": "",
         "objectid": 155,
-        "nom_provincia": "",
-        "sentido": "ORIENTE - PONIENTE",
-        "fuente": "KML AUTOPISTA NORORIENTE (1).kml"
+        "nom_provincia": "Santiago",
+        "autopista": "Américo Vespucio Oriente",
+        "fuente": "Base original de autopistas RM"
       }
     }
   ]
